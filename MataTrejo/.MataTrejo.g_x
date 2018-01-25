@@ -1,0 +1,45 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/AS2.h" FileDate="2018-01-24, 21:01:08" FileAge="1516843868163" FileType="45637" CompNumb="34" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918461" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918473" FileType="45637" />
+      <File Name="Generated_Code/AS2.c" FileDate="2018-01-24, 21:01:08" FileAge="1516843868163" FileType="45637" CompNumb="34" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2018-01-20, 00:05:18" FileAge="1516422918434" FileType="45637" />
+      <File Name="Sources/main.c" FileDate="2018-01-24, 21:02:47" FileAge="1516843967270" FileType="128" />
+      <File Name="Generated_Code/AD1.h" FileDate="2018-01-24, 21:01:08" FileAge="1516843868494" FileType="45637" CompNumb="15" />
+      <File Name="Documentation/MataTrejo.txt" FileDate="2018-01-24, 21:01:11" FileAge="1516843871062" FileType="3072" />
+      <File Name="Generated_Code/Bit2.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918505" FileType="45637" CompNumb="11" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2018-01-20, 00:05:18" FileAge="1516422918413" FileType="8" CompNumb="4" />
+      <File Name="Generated_Code/Cap1.h" FileDate="2018-01-24, 21:01:08" FileAge="1516843868163" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/AD1.c" FileDate="2018-01-24, 21:01:09" FileAge="1516843869182" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/Bit2.c" FileDate="2018-01-20, 00:05:18" FileAge="1516422918499" FileType="45637" CompNumb="11" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2018-01-24, 21:01:09" FileAge="1516843869478" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/MataTrejo_Settings.xml" FileDate="2018-01-24, 21:01:10" FileAge="1516843870850" FileType="3072" />
+      <File Name="Generated_Code/Cap1.c" FileDate="2018-01-24, 21:01:08" FileAge="1516843868072" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/AS1.h" FileDate="2018-01-21, 06:59:19" FileAge="1516534159308" FileType="45637" CompNumb="8" />
+      <File Name="Documentation/MataTrejo_SIGNALS.txt" FileDate="2018-01-24, 21:03:06" FileAge="1516843986571" FileType="3072" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918467" FileType="45637" />
+      <File Name="Generated_Code/AS1.c" FileDate="2018-01-21, 06:59:19" FileAge="1516534159315" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/TI1.h" FileDate="2018-01-21, 07:00:52" FileAge="1516534252011" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/Bit1.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918569" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/TI1.c" FileDate="2018-01-21, 07:00:52" FileAge="1516534252031" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/Bit1.c" FileDate="2018-01-20, 00:05:18" FileAge="1516422918562" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918480" FileType="45637" />
+      <File Name="Sources/Events.h" FileDate="2018-01-24, 21:01:09" FileAge="1516843869738" FileType="131328" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2018-01-20, 00:05:18" FileAge="1516422918426" FileType="45637" CompNumb="4" />
+      <File Name="Sources/Events.c" FileDate="2018-01-24, 21:01:09" FileAge="1516843869810" FileType="131328" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2018-01-24, 21:01:09" FileAge="1516843869305" FileType="45637" CompNumb="4" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>25</CodeGenReference>
+</CodeGenerationInfo>
