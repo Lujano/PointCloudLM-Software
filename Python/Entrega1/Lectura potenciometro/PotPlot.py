@@ -48,6 +48,7 @@ def main():
         i += 1
         y = port_value*3.2/(2**12-1)
         #plt.scatter(i, y)
+        #
         print(y)
         plt.pause(0.000005)
 
