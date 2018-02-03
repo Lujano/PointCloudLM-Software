@@ -1,0 +1,96 @@
+[create_PE_project]
+DEST_LANGUAGE=c
+DEST_LANGUAGE_POSSIBILITIES=c 
+CPUs=#DEF-LIST-CPUS-FOR-MASTER-MCU-NAME:MC9S08QE128
+DEST_COMPILER=
+%-Project name: ProcessorExpert (used for main module name)
+%-PE_MODE   : CLASSIC (one of: CLASSIC,MCU_INIT)
+%-PE Family : HCS08
+%-CW MCUNAME: MC9S08QE128
+%-CPE FILE  : MCU10
+%-LANGUAGE  : c (language that will be used in Device Initialization, one of: c, asm, abs_asm)
+%-COMPILER  :  compiler that should be selected by default. Can be empty - the first available is automatically selected
+%-
+%-
+%SUBROUTINE split(listInString,separator,targetList)
+%:myString=%listInString
+%-define! list
+%while (%str_length(myString) > '0')
+  %:p=%str_pos(separator, myString)
+  %if (p > '0')
+    %:tmpstr=%myString
+    %substring tmpstr, 1, %EXPR(%p - 1)
+    %substring myString, %EXPR(%p + 1), %EXPR(%str_length(myString) - %p)
+    %if (%str_length(tmpstr) > '0')
+      %apploc %'targetList' %tmpstr
+    %endif
+  %else
+    %if (%str_length(myString) > '0')
+      %apploc %'targetList' %myString
+    %endif
+    %define! myString
+  %endif
+  %undef! p
+  %undef! tmpstr
+%endwhile
+%SUBROUTINE_END
+%-
+%define ECLIPSE_WIZARD_SELECTED
+%define_list Wizard_Variants {
+%define_list}
+%define_list Wizard_Configurations {
+%define_list}
+%define PE_GENERATE_AFTER_PRJ_CREATE ProcessorExpert
+%-
+%define VariantsStr MC9S08QE128CLK
+%define ConfigsStr Debug;Release
+%inclSUB split(%VariantsStr,;,Wizard_Variants)
+%inclSUB split(%ConfigsStr,;,Wizard_Configurations)
+%-
+%define PE_MODE CLASSIC
+%define CW_MCU_NAME MC9S08QE128
+%define Wizard_InitAllPeriphs NO
+%define Wizard_InitPinSettings NO
+%define Wizard_MQX_Lite NO
+%define Wizard_Compiler 
+%- SDK support
+%define Wizard_SdkProject ##SDK_PROJECT##
+%define Wizard_SdkVariable ##SDK_PATH##
+%- remove trailing slash/backslash
+%if %str_endsWith(Wizard_SdkVariable,'\') = 'true' | %str_endsWith(Wizard_SdkVariable,'/') = 'true'
+  %:len = %str_length(Wizard_SdkVariable)
+  %define! Wizard_SdkVariable %str_substring(Wizard_SdkVariable,0,%EXPR(%len-1))
+%endif
+%- Board Support
+%define Wizard_Board ##BOARD_NAME##
+%define Wizard_BoardPebsStr ##BOARD_PEBS##
+%define_list Wizard_BoardPebs {
+%define_list}
+%inclSUB split(%Wizard_BoardPebsStr,;,Wizard_BoardPebs)
+%-
+%- Wizard_StandAlone one of: STANDALONE/LINKED/NO
+%define Wizard_StandAlone NO
+%if %Wizard_StandAlone = "LINKED"
+  %set @_ProjectOptions_@StaticFilesGenerationMode Index 0
+%elif %Wizard_StandAlone = "STANDALONE"
+  %set @_ProjectOptions_@StaticFilesGenerationMode Index 1
+%endif
+%-
+%- Create CPUs and configurations
+%include ..\Config\PE\CPE\MCU10.cpe
+%- Initialize all peripherals
+%if %Wizard_InitAllPeriphs='YES'
+  %- add all init components
+  %:tmpCount=%addAllPeripheralInitComponents()
+%elif %Wizard_InitPinSettings='YES'
+  %if %Wizard_SdkProject='YES'
+    %- fsl_clock_manager is needed by PinSettings
+    %createProjectItem(Bean,fsl_clock_manager,EnableInAllConfigurations)
+  %endif  
+  %- add PinSettings components
+  %createProjectItem(Bean,PinSettings,EnableInAllConfigurations)
+%endif %-Wizard_InitAllPeriphs 
+%if %Wizard_MQX_Lite='YES'
+  %createProjectItem(Bean,MQXLite,EnableInAllConfigurations)
+%endif %-Wizard_MQX_Lite
+[_end_]

@@ -1,0 +1,31 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Sources/main.c" FileDate="2018-02-03, 07:40:39" FileAge="1517659839786" FileType="128" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2018-02-03, 07:40:39" FileAge="1517659839786" FileType="45637" CompNumb="4" />
+      <File Name="Sources/Events.c" FileDate="2018-02-03, 07:40:39" FileAge="1517659839776" FileType="131328" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2018-02-03, 07:40:39" FileAge="1517659839776" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839786" FileType="45637" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839796" FileType="45637" />
+      <File Name="Documentation/Servos_Fase1.txt" FileDate="2018-02-03, 07:40:39" FileAge="1517659839953" FileType="3072" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2018-02-03, 07:40:39" FileAge="1517659839786" FileType="45637" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839796" FileType="45637" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839786" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/Servos_Fase1_SIGNALS.txt" FileDate="2018-02-03, 07:40:39" FileAge="1517659839796" FileType="3072" />
+      <File Name="Sources/Events.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839776" FileType="131328" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2018-02-03, 07:40:39" FileAge="1517659839776" FileType="8" CompNumb="4" />
+      <File Name="Documentation/Servos_Fase1_Settings.xml" FileDate="2018-02-03, 07:40:39" FileAge="1517659839846" FileType="3072" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2018-02-03, 07:40:39" FileAge="1517659839796" FileType="45637" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>1</CodeGenReference>
+</CodeGenerationInfo>

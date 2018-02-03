@@ -1,0 +1,19 @@
+-Ms
+-I"$(ProjDirPath)/Project_Headers"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/device/src"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/lib"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/src"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/device/include"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/include"
+-I"$(MCUToolsBaseDirEnv)/lib/hc08c/device/asm_include"
+-I"$(ProjDirPath)/Generated_Code"
+-I"$(ProjDirPath)/Sources"
+-BfaTSRON
+-Qvtpnone
+-F2
+-ViewHidden
+-WmsgFob"%f%e:%l:%k:%d %m\n"
+-MMU
+-TD2
+-Fd
+-Cs08

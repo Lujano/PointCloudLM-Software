@@ -1,0 +1,47 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/TI1.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051682" FileType="45637" CompNumb="12" />
+      <File Name="Generated_Code/Bit3.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051290" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2018-02-03, 10:47:31" FileAge="1517671051757" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/Ultrasonido_Fase1_SIGNALS.txt" FileDate="2018-02-03, 12:34:48" FileAge="1517677488447" FileType="3072" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2018-02-03, 08:14:50" FileAge="1517661890674" FileType="45637" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051775" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051764" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/AS2.h" FileDate="2018-02-03, 08:16:32" FileAge="1517661992795" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2018-02-03, 08:14:50" FileAge="1517661890627" FileType="45637" />
+      <File Name="Generated_Code/AS2.c" FileDate="2018-02-03, 08:16:32" FileAge="1517661992792" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2018-02-03, 08:14:50" FileAge="1517661890627" FileType="45637" />
+      <File Name="Generated_Code/Bit2.h" FileDate="2018-02-03, 12:34:48" FileAge="1517677488425" FileType="45637" CompNumb="14" />
+      <File Name="Sources/Events.h" FileDate="2018-02-03, 12:31:01" FileAge="1517677261095" FileType="131328" />
+      <File Name="Generated_Code/Cap1.h" FileDate="2018-02-03, 10:47:31" FileAge="1517671051318" FileType="45637" CompNumb="15" />
+      <File Name="Documentation/Ultrasonido_Fase1.txt" FileDate="2018-02-03, 12:34:48" FileAge="1517677488576" FileType="3072" />
+      <File Name="Generated_Code/TI2.h" FileDate="2018-02-03, 10:47:31" FileAge="1517671051334" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/Bit2.c" FileDate="2018-02-03, 12:34:48" FileAge="1517677488431" FileType="45637" CompNumb="14" />
+      <File Name="Sources/Events.c" FileDate="2018-02-03, 12:33:04" FileAge="1517677384002" FileType="131328" />
+      <File Name="Generated_Code/Cap1.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051314" FileType="45637" CompNumb="15" />
+      <File Name="Generated_Code/TI2.c" FileDate="2018-02-03, 10:47:31" FileAge="1517671051332" FileType="45637" CompNumb="13" />
+      <File Name="Documentation/Ultrasonido_Fase1_Settings.xml" FileDate="2018-02-03, 12:34:48" FileAge="1517677488562" FileType="3072" />
+      <File Name="Generated_Code/AS1.h" FileDate="2018-02-03, 08:16:32" FileAge="1517661992799" FileType="45637" CompNumb="8" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2018-02-03, 08:14:50" FileAge="1517661890617" FileType="8" CompNumb="4" />
+      <File Name="Sources/main.c" FileDate="2018-02-03, 12:34:13" FileAge="1517677453486" FileType="128" />
+      <File Name="Generated_Code/AS1.c" FileDate="2018-02-03, 08:16:32" FileAge="1517661992797" FileType="45637" CompNumb="8" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2018-02-03, 08:14:50" FileAge="1517661890664" FileType="45637" />
+      <File Name="Generated_Code/Bit1.h" FileDate="2018-02-03, 09:27:07" FileAge="1517666227555" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2018-02-03, 08:14:50" FileAge="1517661890664" FileType="45637" />
+      <File Name="Generated_Code/TI1.h" FileDate="2018-02-03, 10:47:31" FileAge="1517671051599" FileType="45637" CompNumb="12" />
+      <File Name="Generated_Code/Bit3.h" FileDate="2018-02-03, 10:47:31" FileAge="1517671051311" FileType="45637" CompNumb="16" />
+      <File Name="Generated_Code/Bit1.c" FileDate="2018-02-03, 09:27:07" FileAge="1517666227551" FileType="45637" CompNumb="10" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>6</CodeGenReference>
+</CodeGenerationInfo>

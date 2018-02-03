@@ -1,0 +1,9 @@
+Project_Settings/Startup_Code/start08.c
+Project_Settings/Linker_Files/Project.prm
+Project_Settings/Linker_Files/burner.bbl
+Project_Settings/Debugger/MC9S08QE128.mem
+Project_Settings/Debugger/MC9S08QE128.tcl
+.settings/com.freescale.processorexpert.core.prefs
+ProcessorExpert.pe
+.settings/com.freescale.core.ide.newprojectwizard.prefs
+ReferencedRSESystems.xml
