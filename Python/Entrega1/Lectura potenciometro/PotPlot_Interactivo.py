@@ -24,15 +24,12 @@ def detect_data(port):
     flag = True
 
     while flag:
-        data_in = port.read(2)
-        if ord(data_in[0]) == 255 and ord(data_in[1]) == 255:
-            flag = False
+        anuncio = port.read(1)
+        anuncio = ord(anuncio[0]) # convertir en entero
 
-
-
-
-
-
+        if (anuncio & 0xf0)  == 0xf0 # Se detecta el byte de anuncio de trama
+                n_canales = anuncio & 0x0f # Numero de canales a leer
+                return  n_canales
 
 def main():
     plt.axis('auto')
@@ -42,14 +39,12 @@ def main():
     i = 0.00
     y = 0.00
     while(True):
-        detect_data(port)
-        data_in = port.read(2)
-        port_value = ord(data_in[0])+(2**8)*ord(data_in[1])
+        n_canales = detect_data(port)
+        data_in = port.read(2*n_canales)
+        canal_n1 = (2**7)*ord(data_in[0])+ord(data_in[1])
+        y = canal_n1*3.2/(2**12-1) # Escalamiento
         i += 1
-        y = port_value*3.2/(2**12-1)
-        #plt.scatter(i, y)
-        #
-        print(y)
+        plt.scatter(i, y)
         plt.pause(0.000005)
 
 
