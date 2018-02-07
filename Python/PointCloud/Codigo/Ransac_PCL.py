@@ -26,7 +26,7 @@ def write_pcd_file(pointcloud, output_path):
 # To visualize the passed pointcloud.
 def viewer_pointcloud(pointcloud):
     mlab.figure(bgcolor=(1, 1, 1))
-    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='point')
+    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere', scale_factor = 0.025)
     mlab.show()
     return
 
@@ -153,23 +153,44 @@ def calculate_rotation_matrix(plane_model1, plane_model2):
 def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
-    pointcloud = read_pcd_file("../resources/pcl1exercise2.pcd")
-    print(pointcloud[0])
-    print(pointcloud.shape[0])
-    viewer_pointcloud(pointcloud)
-    #[ransac_pointcloud, plane_model] = random_sampling_consensus(pointcloud, 100, 0.2) # Fill the function
-    #viewer_original_vs_ransac_pointcloud_vs_plane(ransac_pointcloud, pointcloud, plane_model)
+    #pointcloud = read_pcd_file("../resources/pcl1exercise2.pcd")
 
-    # Exercise 2 - Detect the Rotation Matrix from 2 frames
-    # numb_iter, threshold = 100, 0.2
-    # pointcloud1 = read_pcd_file("../resources/pcl1exercise2.pcd")
-    # pointcloud2 = read_pcd_file("../resources/pcl2exercise2.pcd")
-    # viewer_pointcloud1_vs_pointcloud2(pointcloud1, pointcloud2)
-    # ransac_pointcloud1, plane_model1 = random_sampling_consensus(pointcloud1, numb_iter, threshold)
-    # ransac_pointcloud2, plane_model2 = random_sampling_consensus(pointcloud2, numb_iter, threshold)
-    # Transf_matrix = calculate_rotation_matrix(plane_model1, plane_model2) # Fill the function
-    # pointcloud2_fixed = transform_pointcloud(Transf_matrix, pointcloud2)
-    # viewer_pointcloud1_vs_pointcloud2(pointcloud1, pointcloud2_fixed)
+    # Datos de motores calibrados
+    phi_180 = 228
+    phi_0 = 36
+    phi_resol = (phi_180 - phi_0 + 1) / 180.0
+    phi_step = 1.0  # un paso
+    ni_phi = int(round((phi_180 - phi_0 + 1) / phi_step))  # numero de angulos phi
+
+    theta_90 = 245
+    theta_0 = 131
+    theta_min = 100  # minimo angulo sin que el motor choque con la base
+    theta_resol = (theta_90 - theta_0 + 1) / 90.0
+    theta_step = 1.0  # un paso
+    ni_theta = int(round((theta_90 - theta_0 + 1) / theta_step))  # numero de angulos theta
+
+    data = np.zeros([0, 3])
+    r = 5
+    for theta in np.arange(0, 90, 90.0/(ni_theta/2)):
+        for phi in np.arange (0, 180, 180.0/(ni_phi/2)):
+            theta_prima = theta*np.pi/180
+            phi_prima = phi*np.pi/180
+            x = r*np.sin(theta_prima)*np.cos(phi_prima)
+            y = r*np.sin(theta_prima)*np.sin(phi_prima)
+            z = r*np.cos(theta_prima)
+            data = np.append(data, [[x, y, z]], 0)
+    pointcloud = data
+    print("Numero de datos: {}".format(pointcloud.shape[0]))
+    mlab.figure(bgcolor=(1, 1, 1))
+    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere',
+                  scale_factor=0.025)
+    sensor = np.array([[0 ,0, 0]])
+    mlab.points3d(sensor[:, 0], sensor[:, 1], sensor[:, 2], color=(1, 0, 0), mode='sphere',
+                  scale_factor=0.5)
+
+
+
+    mlab.show()
 
 
 if __name__ == '__main__':

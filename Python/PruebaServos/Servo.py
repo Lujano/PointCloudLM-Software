@@ -23,21 +23,29 @@ def servo2_send(port, posicion): # el servo que controla theta (respecto al eje 
 def main():
 
     port = open_port()
-    i = 0
 
+
+    # Datos de motores calibrados
     phi_180 =228
     phi_0 = 36
+    phi_resol = (phi_180-phi_0+1)/180.0
 
     theta_90 = 245
-    theta_45 = 131
-    theta_min = 100
+    theta_0 = 131
+    theta_min = 100  # minimo angulo sin que el motor choque con la base
+    theta_resol = (theta_90-theta_0 +1)/90.0
+
+
 
 
     frequency = 2500  # Set Frequency To 2500 Hertz
     duration = 1000  # Set Duration To 1000 ms == 1 second
-    winsound.Beep(frequency, duration)
+    winsound.Beep(frequency, duration) # beep lindo para empezar el movimiento
+
     time_inicial= time.time()
-    for step2 in range (theta_90, theta_45, -2):
+
+    i = 0
+    for step2 in range (theta_90, theta_0, -2):
         servo2_send(port, step2)
         time.sleep(0.1)
         if i == 0:
@@ -53,9 +61,10 @@ def main():
 
 
 
+
     time_final = (time.time()-time_inicial)/60
     print(time_final)
     close_port(port)
-    winsound.Beep(frequency, duration)
+    winsound.Beep(frequency, duration)# beep lindo para terminar el movimiento
 
 if __name__ == "__main__": main()
