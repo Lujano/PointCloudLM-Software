@@ -27,6 +27,7 @@ theta_index = int(round((theta -theta_0)/theta_step))
 
 ###
 ###
+###
 
 # Convertir data a nube de puntos
 data_reshape = np.zeros([0, 3])
