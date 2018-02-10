@@ -1,5 +1,4 @@
-# Luis Roldao - Universidad Simon Bolivar
-# 30-Nov-2017
+
 # In order to create the environment for running this code, remember to run the
 # following command in your Anaconda command line:
 # --> conda create --name 3dclass --channel ccordoba12 python=2.7 pcl python-pcl numpy matplotlib mayavi
@@ -60,93 +59,6 @@ def transform_pointcloud(transf_matrix, pointcloud):
     return np.delete(np.transpose(np.dot(transf_matrix,
                                          np.transpose(np.c_[pointcloud, np.ones(pointcloud.shape[0])]))), 3, axis=1)
 
-
-def normalize_vector(vector):
-    return vector/np.linalg.norm(vector)
-
-
-# --------------------------------------------------------------------------------------------------------------------
-# This is the function to complete, it should receive a pointcloud (numpy array [x, y, z],[x, y, z]...),
-# the number of iterations of the Ransac and the threshold to be used. It should return a new pointcloud
-# numpy array with the points extracted by the Ransac and a numpy array with the variables of the plane
-# (A, B, C, D) - Remember that the equation of the plane Ax+By+Cz+D=0 defines the plane itself.
-def random_sampling_consensus(pointcloud, numb_iterations, threshold):
-
-    # FILL THE FUNCTION --------------------------------
-
-    # Return the requested variables
-    N = pointcloud.shape[0]
-
-    #
-    ransac_pointcloud = np.zeros((0, 3))
-    scoremax = 0
-    for i in range(numb_iterations):
-        points_inside = 0
-        # Generar 3 puntos aleatorios
-        #i1, i2, i3 = random.randrange(0, N), random.randrange(0, N), random.randrange(0, N)
-        [i1, i2, i3] = np.random.choice(N, 3, replace= False)
-
-        # Crear 2 vectores y verificar que no son coplanares
-        p1, p2, p3 = pointcloud[i1], pointcloud[i2], pointcloud[i3]
-        vector_p2p1 =p1-p2
-        vector_p2p3 =p3-p2
-        while (np.cross(vector_p2p1, vector_p2p3)[0] == 0) and (np.cross(vector_p2p1, vector_p2p3)[1] == 0) and (np.cross(vector_p2p1, vector_p2p3)[2] == 0) :
-            # Generar 3 puntos aleatorios
-            [i1, i2, i3] = np.random.choice(N, 3, replace=False)
-            p1, p2, p3 = pointcloud[i1], pointcloud[i2], pointcloud[i3]
-
-            # Crear 2 vectores y verificar que no son coplanares
-            vector_p2p1 = p1 - p2
-            vector_p2p3 = p3 - p2
-            print('a')
-        # Points
-        [x1, y1, z1] = p1
-        [x2, y2, z2] = p2
-        [x3, y3, z3] = p3
-        A = (y3-y2)*(z1-z2)-(z3-z2)*(y1-y2)
-        B = (z3-z2)*(x1-x2)-(x3-x2)*(z1-z2)
-        C = (x3-x2)*(y1-y2)-(y3-y2)*(x1-x2)
-        D = -A*x1 -B*y1- C*z1
-
-        # Calcular distancias sobre todos los puntos de los datos al plano
-
-        for ip in range(N):
-            [xi, yi, zi] = pointcloud[ip]
-            d = abs(A*xi +B*yi+ C*zi+D)/np.sqrt(A**2+B**2+C**2)
-
-            if d<threshold:
-                points_inside += 1
-
-        if points_inside >= scoremax:
-            [rancA, rancB, rancC, rancD] = [A, B, C, D]
-            scoremax = points_inside
-
-    for ip in range(N):
-        [xi, yi, zi] = pointcloud[ip]
-
-        d = abs(rancA * xi + rancB * yi + rancC * zi + rancD) / np.sqrt(rancA ** 2 + rancB ** 2 + rancC ** 2)
-
-        if d < threshold:
-            ransac_pointcloud = np.vstack([ ransac_pointcloud,[ xi, yi, zi]] )
-
-    return [ransac_pointcloud , [rancA, rancB, rancC, rancD]]
-
-
-
-
-
-
-# --------------------------------------------------------------------------------------------------------------------
-
-
-# --------------------------------------------------------------------------------------------------------------------
-# Given 2 plane models, calculate the rotation matrix that fits both planes
-def calculate_rotation_matrix(plane_model1, plane_model2):
-
-    # FILL THE FUNCTION --------------------------------
-
-    # Return the requested variables
-    return transformation_matrix
 # --------------------------------------------------------------------------------------------------------------------
 
 
@@ -193,5 +105,4 @@ def main():
     mlab.show()
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()
