@@ -124,7 +124,6 @@ def main():
         step1 = (2 ** 7) * ord(data_in[6]) + ord(data_in[7])
         step2 = (2 ** 7) * ord(data_in[8]) + ord(data_in[9])
 
-        # Ajuste de indices para la creacion de la matriz de datos
         phi_prima = step1
         theta_prima = step2
         phi = phi_180-phi_prima
@@ -160,8 +159,6 @@ def main():
     sensor = np.array([[0 ,0, 0]])
     mlab.points3d(sensor[:, 0], sensor[:, 1], sensor[:, 2], color=(1, 0, 0), mode='sphere',
                   scale_factor=0.5)
-
-
 
     mlab.show()
     write_pcd_file(pointcloud, "adquisicion2.pcd")
