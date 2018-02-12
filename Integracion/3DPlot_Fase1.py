@@ -29,7 +29,7 @@ def viewer_pointcloud(pointcloud):
 def viewer_pointcloud2(pointcloud):
     mlab.figure(bgcolor=(1, 1, 1))
     mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere',
-                  scale_factor=0.25)
+                  scale_factor=0.1)
     sensor = np.array([[0 ,0, 0]])
     mlab.points3d(sensor[:, 0], sensor[:, 1], sensor[:, 2], color=(1, 0, 0), mode='sphere',
                   scale_factor=0.5)
@@ -72,7 +72,7 @@ def transform_pointcloud(transf_matrix, pointcloud):
 def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
-    pointcloud = read_pcd_file("adquisicion2.pcd")
+    pointcloud = read_pcd_file("adquisicion5.pcd")
     print("numero de puntos = {}".format(pointcloud.shape[0]))
     viewer_pointcloud2(pointcloud)
 

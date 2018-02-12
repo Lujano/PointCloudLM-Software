@@ -8,6 +8,7 @@ from mayavi import mlab
 import numpy as np
 import time
 import serial
+import winsound
 
 
 def open_port():
@@ -116,7 +117,12 @@ def main():
     # Convertir data a nube de puntos
     data = np.zeros([0, 3])
     step2 = theta_0
-    while (step2 <= theta_0+80):  # Contar 10 segundos
+
+    frequency = 2500  # Set Frequency To 2500 Hertz
+    duration = 1000  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento
+
+    while (step2 <= theta_90):  # Contar 10 segundos
         n_canales = detect_data(port)
         data_in = port.read(2 * n_canales)
         canal_n1 = (2 ** 7) * ord(data_in[0]) + ord(data_in[1])
@@ -129,9 +135,10 @@ def main():
         phi = phi_180-phi_prima
         theta = theta_90 - theta_prima
         if (echo< 28000) :
-            r = echo/580.0 #metros
+            r = echo/580.0 +0.12#metros
             theta = theta *theta_resol*np.pi / 180.0
             phi = phi *phi_resol*np.pi / 180.0
+
             x = r * np.sin(theta) * np.cos(phi)
             y = r * np.sin(theta) * np.sin(phi)
             z = r * np.cos(theta)
@@ -161,7 +168,7 @@ def main():
                   scale_factor=0.5)
 
     mlab.show()
-    write_pcd_file(pointcloud, "adquisicion2.pcd")
+    write_pcd_file(pointcloud, "adquisicion5.pcd")
 
 
 if __name__ == '__main__': main()
