@@ -2,7 +2,7 @@ import numpy as np
 from mayavi import mlab
 
 def test_points3d():
-    t = numpy.linspace(0, 4 * numpy.pi, 200)
+    t = np.linspace(0, 4 * np.pi, 200)
     cos = np.cos
     sin = np.sin
 
@@ -27,12 +27,12 @@ if __name__ == "__main__":
 
     mlab.points3d(x, y, z, colormap="copper", scale_factor=.5)
     mlab.axes(xlabel='x', ylabel='y', zlabel='z', ranges=(0, np.max(x), 0, np.max(y), 0, np.max(z)), nb_labels=10)
-    x, y, z = numpy.mgrid[-2:3, -2:3, -2:3]
-    r = numpy.sqrt(x ** 2 + y ** 2 + z ** 4)
-    u = y * numpy.sin(r) / (r + 0.001)
-    v = -x * numpy.sin(r) / (r + 0.001)
-    w = numpy.zeros_like(z)
-    obj = quiver3d(x, y, z, u, v, w, line_width=3, scale_factor=1)
+    x, y, z = np.mgrid[-2:3, -2:3, -2:3]
+    r = np.sqrt(x ** 2 + y ** 2 + z ** 4)
+    u = y * np.sin(r) / (r + 0.001)
+    v = -x * np.sin(r) / (r + 0.001)
+    w = np.zeros_like(z)
+    #obj = mlab.quiver3d(x, y, z, u, v, w, line_width=3, scale_factor=1)
     mlab.show()
 
 

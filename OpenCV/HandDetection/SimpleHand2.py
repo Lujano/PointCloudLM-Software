@@ -3,17 +3,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 cap = cv2.VideoCapture(0)
-while (cap.isOpened()):
-    ret, img = cap.read()
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    blur = cv2.GaussianBlur(gray, (5, 5), 0)
+fgbg = cv2.createBackgroundSubtractorKNN()
+while(1):
+    ret, frame = cap.read()
+    blur = cv2.GaussianBlur(frame, (7, 7), 0)
+    bmask = fgbg.apply(blur)
+    img = frame
+    # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # blur = cv2.GaussianBlur(gray, (5, 5), 0)
+    # ret, thresh1 = cv2.threshold(blur,50, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 
-    ret, thresh1 = cv2.threshold(blur, 50, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-
-    im3, contours, hierarchy = cv2.findContours(thresh1, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    im3, contours, hierarchy = cv2.findContours(bmask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     drawing = np.zeros(img.shape, np.uint8)
 
-    max_area = 0fa
+    max_area = 0
+    ci = 0
 
     for i in range(len(contours)):
         cnt = contours[i]
@@ -30,7 +34,7 @@ while (cap.isOpened()):
 
     centr = (cx, cy)
     drawing = np.zeros(img.shape, np.uint8)
-    cv2.circle(img, centr, 5, [0, 0, 255], 2)
+    cv2.circle(img, centr, 10, [0, 0, 255], 2)
     cv2.drawContours(drawing, [cnt], 0, (0, 255, 0), 2)
     cv2.drawContours(drawing, [hull], 0, (0, 0, 255), 2)
 
@@ -42,7 +46,7 @@ while (cap.isOpened()):
         mind = 0
         maxd = 0
         A = None
-        if type(defects)!= type(None):
+        if type(defects)!= type(A):
 
             for i in range(defects.shape[0]):
                 s, e, f, d = defects[i, 0]
@@ -58,7 +62,7 @@ while (cap.isOpened()):
 
     cv2.imshow('output', drawing)
     cv2.imshow('input', img)
-    cv2.imshow('Thresh', thresh1)
+    cv2.imshow('Thresh', bmask)
     k = cv2.waitKey(10)
     if k == 27:
         break

@@ -168,7 +168,7 @@ def main():
                   scale_factor=0.5)
 
     mlab.show()
-    write_pcd_file(pointcloud, "adquisicion5.pcd")
+    write_pcd_file(pointcloud, "adquisicion6.pcd")
 
 
 if __name__ == '__main__': main()
