@@ -5,21 +5,28 @@
 # import the necessary packages
 import numpy as np
 import cv2
+import serial
 
-# define the upper and lower boundaries of the HSV pixel
-# intensities to be considered 'skin'
-lower = np.array([100, 50, 50], dtype = "uint8")
-upper = np.array([120, 255, 255], dtype = "uint8")
+def open_port():
+    ser = serial.Serial('COM12', 9600)
 
-cap = cv2.VideoCapture(0)
-bgSubThreshold = 50
-bgModel = cv2.createBackgroundSubtractorMOG2(0, bgSubThreshold)
-last_paso_theta , last_paso_phi = 145, 192
-call = 0
+    return ser
+
+
+def close_port(port):
+    port.close()
+
+
+def servo1_send(port, posicion): # el servo que controla phi (plano xy)
+    direccion = 1 # conector del driver al que esta conectado el motor
+    port.write(bytearray([255, direccion, posicion]))
+
+def servo2_send(port, posicion): # el servo que controla theta (respecto al eje z)
+    direccion = 2 # conector del driver al que esta conectado el motor
+    port.write(bytearray([255, direccion, posicion]))
 
 def adjust_coord(handx, handy, w1, y1, n_pasos):
-	global last_paso_theta
-	global last_paso_phi
+
 
 	# Chequeo de fronteras de control
 	if handx<0:
@@ -38,18 +45,35 @@ def adjust_coord(handx, handy, w1, y1, n_pasos):
 	return paso_theta, paso_phi
 
 
-def removeBG(frame):
-    fgmask = bgModel.apply(frame)
-    # kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
-    # res = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel)
+# define the upper and lower boundaries of the HSV pixel
+# intensities to be considered 'skin'
+lower = np.array([100, 50, 50], dtype = "uint8")
+upper = np.array([120, 255, 255], dtype = "uint8")
 
-    kernel = np.ones((3, 3), np.uint8)
-    fgmask = cv2.erode(fgmask, kernel, iterations=1)
-    res = cv2.bitwise_and(frame, frame, mask=fgmask)
-    return res
+cap = cv2.VideoCapture(0)
+bgSubThreshold = 50
+bgModel = cv2.createBackgroundSubtractorMOG2(0, bgSubThreshold)
+last_paso_theta , last_paso_phi = 145, 192 #centro
+call = 0
 
 
+
+
+# Datos de motores calibrados
+phi_0 =228
+phi_180 = 36
+phi_resol = (phi_180-phi_0+1)/180.0
+
+theta_0 = 245
+theta_90 = 131
+theta_max = 100  # minimo angulo sin que el motor choque con la base
+theta_resol = (theta_90-theta_0 +1)/90.0
+
+port = open_port()
+servo1_send(port, phi_180 )
 while True:
+
+
 
 	grabbed, frame = cap.read()
 	frame = cv2.flip(frame, 1)
@@ -59,7 +83,6 @@ while True:
 
 	#print("W= {}, H={}".format(w, h))
 
-	res = removeBG(frame)
 
 	# if we are viewing a video and we did not grab a
 	# frame, then we have reached the end of the video
@@ -143,12 +166,19 @@ while True:
 
 		if np.abs(paso_theta-last_paso_theta)>4:
 			paso_theta = last_paso_theta
+		else:
+			servo2_send(port, -paso_theta+theta_0)
+			print("theta {}, phi {}".format(paso_theta, paso_phi))
+
 		if np.abs(paso_phi-last_paso_phi)>4:
 			paso_phi = last_paso_phi
+		else:
+			servo1_send(port, -paso_phi+phi_0)
+			print("theta {}, phi {}".format(paso_theta*90/145, paso_phi*180/192))
 
 		last_paso_theta, last_paso_phi = paso_theta, paso_phi
 
-		print("theta {}, phi {}".format(paso_theta, paso_phi))
+
 
 	# show the skin in the image along with the mask0
 	cv2.imshow("Draw", drawing)
@@ -156,4 +186,5 @@ while True:
 	cv2.imshow("MOG2", skinMask)
 	# if the 'q' key is pressed, stop the loop
 	if cv2.waitKey(1) & 0xFF == ord("q"):
+		close_port(port)
 		break
