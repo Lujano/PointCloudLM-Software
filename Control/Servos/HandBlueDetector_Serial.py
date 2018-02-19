@@ -1,6 +1,4 @@
-# USAGE
-# python skindetector.py
-# python skindetector.py --video video/skin_example.mov
+# -*- encoding: utf-8 -*-
 
 # import the necessary packages
 import numpy as np
