@@ -1,6 +1,4 @@
-# -*- encoding: utf-8 -*-
 # USAGE
-
 # python skindetector.py
 # python skindetector.py --video video/skin_example.mov
 
@@ -14,7 +12,7 @@ lower = np.array([100, 50, 50], dtype = "uint8")
 upper = np.array([120, 255, 255], dtype = "uint8")
 
 cap = cv2.VideoCapture(0)
-cap2 = cv2.VideoCapture(1)
+cap2 = cv2.VideoCapture(0)
 bgSubThreshold = 50
 bgModel = cv2.createBackgroundSubtractorMOG2(0, bgSubThreshold)
 last_paso_theta , last_paso_phi = 145, 192
@@ -55,7 +53,6 @@ def removeBG(frame):
 while True:
 
 	grabbed, frame = cap.read()
-	grabbed, frame2 = cap2.read()
 	frame = cv2.flip(frame, 1)
 	w , h = frame.shape[1], frame.shape[0]
 	centerx = int(round(w/2))
@@ -158,7 +155,6 @@ while True:
 	cv2.imshow("Draw", drawing)
 	cv2.imshow("Image", frame)
 	cv2.imshow("MOG2", skinMask)
-	cv2.imshow("CAM2", frame2)
 	# if the 'q' key is pressed, stop the loop
 	if cv2.waitKey(1) & 0xFF == ord("q"):
 		break

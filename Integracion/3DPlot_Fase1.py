@@ -27,7 +27,7 @@ def viewer_pointcloud(pointcloud):
 
 
 def viewer_pointcloud2(pointcloud):
-    mlab.figure(bgcolor=(0.5 ,0.5, 0.5) )
+    mlab.figure(bgcolor=(1 ,1, 1) )
     x = pointcloud[:, 0]
     print(x)
     y =pointcloud[:, 1]
@@ -76,7 +76,7 @@ def transform_pointcloud(transf_matrix, pointcloud):
 def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
-    pointcloud = read_pcd_file("adquisicion6.pcd")
+    pointcloud = read_pcd_file("adquisicion5.pcd")
     print("numero de puntos = {}".format(pointcloud.shape[0]))
     viewer_pointcloud2(pointcloud)
 

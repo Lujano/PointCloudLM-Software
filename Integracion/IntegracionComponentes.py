@@ -9,10 +9,11 @@ import numpy as np
 import time
 import serial
 import winsound
+import cv2
 
 
 def open_port():
-    ser = serial.Serial('COM27', 115200)
+    ser = serial.Serial('COM12', 115200)
 
     return ser
 
@@ -146,10 +147,13 @@ def main():
             #y = canal_n1 * 3.2 / (2 ** 12 - 1)  # Escalamiento
             #i += 1
             # Amplitud_matrix = np.append(Amplitud_matrix, [y])
-            # Time_matrix = np.append(Time_matrix, [i])
+            # Time_matrix = np.append(Time_matrix, [i])qq
             T_Final = time.time()
             Dif = T_Final - T_Inicio
             print("distance = {}, theta = {}, phi = {}".format(echo / 58.0, theta*180.0/np.pi, phi*180/np.pi))
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 
     close_port(port)
     # plt.plot(Time_matrix, Amplitud_matrix)
