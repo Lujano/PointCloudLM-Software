@@ -27,6 +27,8 @@ def detect_data(port):
     while flag:
         anuncio = port.read(1)
         anuncio = ord(anuncio[0]) # convertir en entero
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 
         if (anuncio & 0xf0)  == 0xf0: # Se detecta el byte de anuncio de trama
                 n_canales = anuncio & 0x0f # Numero de canales a leer
@@ -56,7 +58,7 @@ def viewer_pointcloud(pointcloud):
 
 # To visualize two pointclouds (The original one and the one obtained after the Ransac normally) and the
 # plane obtained by the Ransac all together.
-def viewer_original_vs_ransac_pointcloud_vs_plane(ransac_pcl, original_pcl, plane_model):
+def viewer_original_vs_ransac_pointcloud_vs_plane(ransac_pcl, original_pqcl, plane_model):
     sensor_range = 120.0
     mlab.figure(bgcolor=(1, 1, 1))
     x, y = np.ogrid[-sensor_range+50:sensor_range+50:1, -sensor_range:sensor_range:1]
@@ -152,8 +154,6 @@ def main():
             Dif = T_Final - T_Inicio
             print("distance = {}, theta = {}, phi = {}".format(echo / 58.0, theta*180.0/np.pi, phi*180/np.pi))
 
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
 
     close_port(port)
     # plt.plot(Time_matrix, Amplitud_matrix)
