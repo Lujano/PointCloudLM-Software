@@ -3,13 +3,19 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 # cap1 = cv2.VideoCapture(1)
-while(True):
+
+while (True):
     # Capture frame-by-frame
     ret, frame = cap.read()
+    w, h = frame.shape[1], frame.shape[0]
     # ret, frame1 = cap1.read()
 
-
     # Display the resulting frame
+    red = (0, 0, 255)
+   # print(h)
+   # print(w)
+    cv2.line(frame, (w-140, 0), (w-140, h-1), red, 3)
+    cv2.line(frame, (140, 0), (140, h - 1), red, 3)
     cv2.imshow('frame', frame)
 
     # cv2.imshow('frame2', frame1)
