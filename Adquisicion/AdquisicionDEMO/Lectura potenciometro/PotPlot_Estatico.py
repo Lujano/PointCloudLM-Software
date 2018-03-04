@@ -1,9 +1,10 @@
 import serial
 import matplotlib.pyplot as plt
-
+import numpy as np
+import time
 
 def open_port():
-    ser = serial.Serial('COM12', 115200)
+    ser = serial.Serial('COM8', 9800)
 
     return ser
 
@@ -18,7 +19,7 @@ def detect_data(port):
         anuncio = port.read(1)
         anuncio = ord(anuncio[0]) # convertir en entero
 
-        if (anuncio & 0xf0)  == 0xf0 # Se detecta el byte de anuncio de trama
+        if (anuncio & 0xf0)  == 0xf0:# Se detecta el byte de anuncio de trama
                 n_canales = anuncio & 0x0f # Numero de canales a leer
                 return  n_canales
 
@@ -36,6 +37,7 @@ def main():
         data_in = port.read(2*n_canales)
         canal_n1 = (2**7)*ord(data_in[0])+ord(data_in[1])
         y = canal_n1*3.2/(2**12-1) # Escalamiento
+        print(y)
         i += 1
         Amplitud_matrix = np.append(Amplitud_matrix, [y])
         Time_matrix = np.append(Time_matrix, [i])

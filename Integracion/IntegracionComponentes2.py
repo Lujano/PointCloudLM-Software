@@ -20,7 +20,7 @@ def open_port():
 def close_port(port):
     port.close()
 
-def detect_data(port):
+def detect_data1(port):
     #port.reset_input_buffer()
     flag = True
 
@@ -89,22 +89,24 @@ def transform_pointcloud(transf_matrix, pointcloud):
 
 def main():
 
+    cap = cv2.VideoCapture(0)
+    ret, frame = cap.read()
     # Exercise 1 - Ransac to detect the Main Plane
     #pointcloud = read_pcd_file("../resources/pcl1exercise2.pcd")
 
     # Datos de motores calibrados
-    phi_180 = 228
-    phi_0 = 36
-    phi_resol = 180.0/(phi_180 - phi_0 + 1)
+    phi_0 = 228
+    phi_180 = 36
+    phi_resol = 180.0/(phi_0 - phi_180 + 1)
     phi_step = 1.0  # un paso
-    ni_phi = int(round((phi_180 - phi_0 + 1) / phi_step))  # numero de angulos phi
+    ni_phi = int(round((phi_0 - phi_180 + 1) / phi_step))  # numero de angulos phi
 
-    theta_90 = 245
-    theta_0 = 131
+    theta_0 = 245
+    theta_90 = 131
     theta_min = 100  # minimo angulo sin que el motor choque con la base
-    theta_resol = 90.0/(theta_90 - theta_0 + 1)
+    theta_resol = 90.0/(theta_0-theta_90 + 1)
     theta_step = 1.0  # un paso
-    ni_theta = int(round((theta_90 - theta_0 + 1) / theta_step))  # numero de angulos theta
+    ni_theta = int(round((theta_0 - theta_90 + 1) / theta_step))  # numero de angulos theta
 
     port = open_port()
     # i = 0.00
@@ -116,44 +118,58 @@ def main():
     Dif = T_Final - T_Inicio
 
     # matriz de datos
-    # Convertir data a nube de puntos
-    data = np.zeros([0, 3])
-    step2 = theta_0
+    # Convertir data1 a nube de puntos
+    data1 = np.zeros([0, 3])
+    data2 = np.zeros([0, 3])
+    step2 = theta_90
 
     frequency = 2500  # Set Frequency To 2500 Hertz
     duration = 1000  # Set Duration To 1000 ms == 1 second
     winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento
 
-    while (step2 <= theta_90):  # Contar 10 segundos
-        n_canales = detect_data(port)
-        data_in = port.read(2 * n_canales)
-        canal_n1 = (2 ** 7) * ord(data_in[0]) + ord(data_in[1])
-        echo = (2 ** 15) * ord(data_in[2]) + (2 ** 8) * ord(data_in[3]) + (2 ** 7) * ord(data_in[4]) + ord(data_in[5])
-        step1 = (2 ** 7) * ord(data_in[6]) + ord(data_in[7])
-        step2 = (2 ** 7) * ord(data_in[8]) + ord(data_in[9])
+    while (step2 <= theta_0-6):  # Contar 10 segundos
+        ret, frame = cap.read()
+        cv2.imshow('frame', frame)
+        #cv2.imshow('frame2', frame1)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+        n_canales = detect_data1(port)
+        data1_in = port.read(2 * n_canales)
+        canal_n1 = (2**7) * ord(data1_in[0]) + ord(data1_in[1])
+        infrarrojo = canal_n1 *1023/(2**12-1)  # Escalamiento
+        infra= 17569.7 * (infrarrojo** (-1.2062)) # medida en cm
+        echo = (2 ** 15) * ord(data1_in[2]) + (2 ** 8) * ord(data1_in[3]) + (2 ** 7) * ord(data1_in[4]) + ord(data1_in[5])
+        step1 = (2 ** 7) * ord(data1_in[6]) + ord(data1_in[7])
+        step2 = (2 ** 7) * ord(data1_in[8]) + ord(data1_in[9])
 
         phi_prima = step1
         theta_prima = step2
-        phi = phi_180-phi_prima
-        theta = theta_90 - theta_prima
+        phi = phi_0-phi_prima
+        theta = theta_0 - theta_prima
         if (echo< 28000) :
-            r = echo/580.0 +0.12#metros
+            r1 = echo/580.0 #+0.12#metros
+            r2 = infra/10.0
             theta = theta *theta_resol*np.pi / 180.0
             phi = phi *phi_resol*np.pi / 180.0
 
-            x = r * np.sin(theta) * np.cos(phi)
-            y = r * np.sin(theta) * np.sin(phi)
-            z = r * np.cos(theta)
-            data = np.append(data, [[x, y, z]], 0)
+            x1 = r1 * np.sin(theta) * np.cos(phi)
+            y1 = r1 * np.sin(theta) * np.sin(phi)
+            z1 = r1 * np.cos(theta)
+
+            x2 = r2 * np.sin(theta) * np.cos(phi)
+            y2 = r2 * np.sin(theta) * np.sin(phi)
+            z2 = r2 * np.cos(theta)
+
+            data1 = np.append(data1, [[x1, y1, z1]], 0)
+            data2 = np.append(data2, [[x2, y2, z2]], 0)
             #y = canal_n1 * 3.2 / (2 ** 12 - 1)  # Escalamiento
             #i += 1
             # Amplitud_matrix = np.append(Amplitud_matrix, [y])
             # Time_matrix = np.append(Time_matrix, [i])qq
             T_Final = time.time()
             Dif = T_Final - T_Inicio
-            print("distance = {}, theta = {}, phi = {}".format(echo / 58.0, theta*180.0/np.pi, phi*180/np.pi))
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            print("distanceU = {}, distanceI = {}, theta = {}, phi = {}".format(echo / 58.0,infra, theta*180.0/np.pi, phi*180/np.pi))
+
 
 
     close_port(port)
@@ -162,18 +178,20 @@ def main():
     # Graficar datos
 
 
-    pointcloud = data
-    print(data)
-    print("Numero de datos: {}".format(pointcloud.shape[0]))
+    pointcloud1 = data1
+    print(data1)
+    print("Numero de datos: {}".format(pointcloud1.shape[0]))
     mlab.figure(bgcolor=(1, 1, 1))
-    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere',
+    mlab.points3d(pointcloud1[:, 0], pointcloud1[:, 1], pointcloud1[:, 2], color=(0, 1, 0), mode='sphere',
                   scale_factor=0.025)
     sensor = np.array([[0 ,0, 0]])
     mlab.points3d(sensor[:, 0], sensor[:, 1], sensor[:, 2], color=(1, 0, 0), mode='sphere',
                   scale_factor=0.5)
 
     mlab.show()
-    write_pcd_file(pointcloud, "adquisicion6.pcd")
+    pointcloud2 = data2
+    write_pcd_file(pointcloud1, "adquisicionUltra.pcd")
+    write_pcd_file(pointcloud2, "adquisicionInfra.pcd")
 
 
 if __name__ == '__main__': main()

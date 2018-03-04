@@ -13,8 +13,8 @@ import cv2
 lower = np.array([100, 50, 50], dtype = "uint8")
 upper = np.array([120, 255, 255], dtype = "uint8")
 
-cap = cv2.VideoCapture(0)
-cap2 = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(1)
+cap2 = cv2.VideoCapture(0)
 bgSubThreshold = 50
 bgModel = cv2.createBackgroundSubtractorMOG2(0, bgSubThreshold)
 last_paso_theta , last_paso_phi = 145, 192
