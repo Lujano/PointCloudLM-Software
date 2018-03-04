@@ -33,15 +33,15 @@ def main():
     T_Final = time.time()
     Dif = T_Final-T_Inicio
     print("inicio")
-    while(True):  # Contar 10 segundos
+    while(Dif < 12):  # Contar 12 segundos
         n_canales = detect_data(port)
         data1_in = port.read(2*n_canales)
         echo = (2 ** 15) * ord(data1_in[0]) + (2 ** 8) * ord(data1_in[1]) + (2 ** 7) * ord(data1_in[2]) + ord(data1_in[3])
         y = echo/(58.0) # Escalamiento
         print(y)
-        # Amplitud_matrix = np.append(Amplitud_matrix, [y])
-        # T_Final = time.time()
-        # Dif = T_Final - T_Inicio
+        Amplitud_matrix = np.append(Amplitud_matrix, [y])
+        T_Final = time.time()
+        Dif = T_Final - T_Inicio
 
     close_port(port)
     np.savetxt('Ultraout.out', Amplitud_matrix, fmt='%1.6e')

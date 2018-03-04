@@ -89,8 +89,8 @@ def transform_pointcloud(transf_matrix, pointcloud):
 
 def main():
 
-    cap = cv2.VideoCapture(0)
-    ret, frame = cap.read()
+    #cap = cv2.VideoCapture(0)
+    #ret, frame = cap.read()
     # Exercise 1 - Ransac to detect the Main Plane
     #pointcloud = read_pcd_file("../resources/pcl1exercise2.pcd")
 
@@ -128,8 +128,8 @@ def main():
     winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento
 
     while (step2 <= theta_0-6):  # Contar 10 segundos
-        ret, frame = cap.read()
-        cv2.imshow('frame', frame)
+        #ret, frame = cap.read()
+        #cv2.imshow('frame', frame)
         #cv2.imshow('frame2', frame1)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
@@ -137,7 +137,10 @@ def main():
         data1_in = port.read(2 * n_canales)
         canal_n1 = (2**7) * ord(data1_in[0]) + ord(data1_in[1])
         infrarrojo = canal_n1 *1023/(2**12-1)  # Escalamiento
-        infra= 17569.7 * (infrarrojo** (-1.2062)) # medida en cm
+        if infrarrojo != 0.0:
+            infra= 17569.7 * (infrarrojo** (-1.2062)) # medida en cm
+        else:
+            infra = 0
         echo = (2 ** 15) * ord(data1_in[2]) + (2 ** 8) * ord(data1_in[3]) + (2 ** 7) * ord(data1_in[4]) + ord(data1_in[5])
         step1 = (2 ** 7) * ord(data1_in[6]) + ord(data1_in[7])
         step2 = (2 ** 7) * ord(data1_in[8]) + ord(data1_in[9])
@@ -147,8 +150,11 @@ def main():
         phi = phi_0-phi_prima
         theta = theta_0 - theta_prima
         if (echo< 28000) :
-            r1 = echo/580.0 #+0.12#metros
-            r2 = infra/10.0
+
+            dhs = 2
+            dys = 13
+            r2 = np.sqrt( (infra/10.0+dys)**2+dhs**2)
+            r1 = np.sqrt( (echo/580.0+dys)**2+dhs**2)  # +0.12#metros
             theta = theta *theta_resol*np.pi / 180.0
             phi = phi *phi_resol*np.pi / 180.0
 

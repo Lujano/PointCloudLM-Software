@@ -1,13 +1,19 @@
 import numpy as np
 import cv2
-
 cap = cv2.VideoCapture(0)
+
+# Define the codec and create VideoWriter object
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output3.avi',fourcc, 20.0, (640,480))
 # cap1 = cv2.VideoCapture(1)
 
 while (True):
     # Capture frame-by-frame
     ret, frame = cap.read()
+    out.write(frame)
     w, h = frame.shape[1], frame.shape[0]
+
+
     # ret, frame1 = cap1.read()
 
     # Display the resulting frame
@@ -24,4 +30,5 @@ while (True):
 
 # When everything done, release the capture
 cap.release()
+out.release()
 cv2.destroyAllWindows()
