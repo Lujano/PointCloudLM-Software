@@ -13,7 +13,7 @@ import cv2
 
 
 def open_port():
-    ser = serial.Serial('COM8', 9800)
+    ser = serial.Serial('COM12', 9800)
 
     return ser
 
