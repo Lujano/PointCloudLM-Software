@@ -21,10 +21,17 @@ def main():
         Distance_matrix = np.append(Distance_matrix, [distance_cm])
         Voltage_matrix = np.append(Voltage_matrix, [media])
 
-    plt.scatter(Distance_matrix, Voltage_matrix)
-
+    # Ajuste polinomial a data
     poly = np.polyfit(Distance_matrix, Voltage_matrix, 3)
-    print(poly)
+    p = np.poly1d(poly)
+
+    #Graficas
+    figure
+    plt.subplot(2,1, 1)
+    plt.scatter(Distance_matrix, Voltage_matrix)
+    plt.subplot(2,1,2)
+
+    p(Distance_matrix)
     plt.show()
 
 
