@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2adc106c-2bdc-4eba-8a8e-2405bcf80dbe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="Infrarrojo_CalibracionView.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="327">
+              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -27,8 +26,8 @@
       <file leaf-file-name="Infrarrojo_Ajuste.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="493">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -112,8 +111,8 @@
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
       </list>
     </option>
   </component>
@@ -229,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Infrarrojo_CalibracionView">
+  <component name="RunManager" selected="Python.Infrarrojo_Ajuste">
     <configuration name="FFT_LowPassMyData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,8 +328,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
         <item index="2" class="java.lang.String" itemvalue="Python.FFT_Prueba" />
         <item index="3" class="java.lang.String" itemvalue="Python.FFT_LowPassMyData" />
         <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
@@ -737,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -755,10 +744,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="327">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
