@@ -5,8 +5,8 @@ import time
 
 
 def main():
-    #Amplitud_matrix = np.loadtxt('Sensor_Data/Infra30cm.out')
-    Amplitud_matrix = np.loadtxt('InfraLowpassNoMotor.out')
+    Amplitud_matrix = np.loadtxt('InfraLowpass.out')
+
     print("Media = {}, Dev = {}, Nmediciones = {} ".format(np.mean(Amplitud_matrix), np.std(Amplitud_matrix, ddof=1),
                                                            Amplitud_matrix.shape[0]))
     plt.figure()
