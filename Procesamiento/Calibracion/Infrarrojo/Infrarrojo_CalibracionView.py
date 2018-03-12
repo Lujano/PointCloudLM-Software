@@ -13,6 +13,13 @@ def main():
 
     print("Media = {}, Dev = {}, Nmediciones = {} ".format(np.mean(Amplitud_matrix), np.std(Amplitud_matrix, ddof=1),
                                                            Amplitud_matrix.shape[0]))
+   # Fs = 2500  # tasa de muestreo
+   # Ts = 1.0 / Fs # intervalo de tiempo
+   # signal_vector = np.loadtxt('InfraNoLowpassNoMotor.out')
+   # t_size = signal_vector.size
+   # print(t_size)
+   # t_vector = np.arange(0, Ts * (t_size), Ts)
+
     plt.figure()
     plt.subplot(2,1,1)
     plt.hist(Amplitud_matrix, bins='auto')
