@@ -21,7 +21,7 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
 
 
 # Filter requirements.
-order = 4
+order = 2
 cutoff = 7.1535 # desired cutoff frequency of the filter, Hz
 fs = 2000
 # Get the filter coefficients so we can check its frequency response.

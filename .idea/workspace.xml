@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2adc106c-2bdc-4eba-8a8e-2405bcf80dbe" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Calculo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Calculo2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/FFT.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Data.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/InfraNoLowpass.out" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Scipy/InfraPRUEBA2.out" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Server/Server_Camera.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Server/camera.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Server/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/PointCloud/Ejemplos/Visualizacion.py" afterPath="$PROJECT_DIR$/PointCloud/Ejemplos/Visualizacion.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,43 +14,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Infrarrojo_CalibracionView.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Infrarrojo_CalibracionView.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="221">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FFT_LowPass.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py">
+      <file leaf-file-name="Infrarrojo_Ajuste.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="327">
+              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
-                <element signature="e#49#67#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Infrarrojo_Calibracion.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
+      <file leaf-file-name="Infrarrojo_Calibracion_Ard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="57" />
+            <state relative-caret-position="180">
+              <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Infrarrojo_Calibracion2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Infrarrojo_Calibracion2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            <state relative-caret-position="174">
+              <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -74,8 +59,18 @@
       <file leaf-file-name="FFT_LowPassMyData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="191">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Infrarrojo_Calibracion.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -90,6 +85,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Amplitud_matrix</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Data</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,10 +109,11 @@
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Data.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
       </list>
     </option>
   </component>
@@ -137,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -160,6 +163,17 @@
             <path>
               <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="Control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="Control" type="462c0819:PsiDirectoryNode" />
+              <item name="Servos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
               <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,10 +189,17 @@
               <item name="Calibracion" type="462c0819:PsiDirectoryNode" />
               <item name="Infrarrojo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
+              <item name="Scipy" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,12 +208,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Server\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Scipy" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Scipy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Server\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -207,25 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Infrarrojo_Calibracion2">
-    <configuration name="FFT_LowPass" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Scipy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.Infrarrojo_CalibracionView">
     <configuration name="FFT_LowPassMyData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +248,42 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="FFT_Prueba" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Scipy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PointCloud-Software" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Infrarrojo_Ajuste" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PointCloud-Software" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Infrarrojo_Calibracion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,24 +297,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Infrarrojo_Calibracion2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,18 +322,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FFT_LowPass" />
-      <item index="2" class="java.lang.String" itemvalue="Python.FFT_LowPassMyData" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FFT_LowPassMyData" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
+      <item index="3" class="java.lang.String" itemvalue="Python.FFT_Prueba" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
-        <item index="2" class="java.lang.String" itemvalue="Python.FFT_LowPassMyData" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
-        <item index="4" class="java.lang.String" itemvalue="Python.FFT_LowPass" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+        <item index="2" class="java.lang.String" itemvalue="Python.FFT_Prueba" />
+        <item index="3" class="java.lang.String" itemvalue="Python.FFT_LowPassMyData" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +364,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -359,26 +381,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/Server_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -386,9 +403,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -404,9 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -414,9 +425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -424,9 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -434,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -442,9 +447,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -452,7 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -460,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -470,9 +469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -480,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,7 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,9 +491,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -508,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,9 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,9 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -536,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,9 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -564,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,9 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,9 +557,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,9 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,9 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,9 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,19 +607,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Sensor_Data/Infra20cm.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Sensor_Data/Infra20cm.out" />
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_calibracion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -666,19 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#47#78#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,9 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72104">
           <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,9 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="1205" column="0" lean-forward="false" selection-start-line="1205" selection-start-column="0" selection-end-line="1205" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,28 +685,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#78#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="85">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
-            <element signature="e#49#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#1155#1186#0" expanded="true" />
+            <element signature="e#49#67#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,38 +702,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="55">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="57" />
+        <state relative-caret-position="238">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="174">
+          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
