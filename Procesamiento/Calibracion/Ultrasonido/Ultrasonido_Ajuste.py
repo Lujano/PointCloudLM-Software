@@ -11,7 +11,7 @@ def main():
     Distance_matrix = np.array([])
     Voltage_matrix = np.array([])
     for element in a:
-        distance_cm = float(element.replace('Infra_','').replace('cm.out', ''))
+        distance_cm = float(element.replace('Ultra','').replace('cm.out', ''))
 
         Data = np.loadtxt(directory+'/'+element)
         media = np.mean(Data)
