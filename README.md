@@ -4,8 +4,7 @@ Software empleado en la implementación del sistema de generación de nubes de p
 # Prerrequisitos
 Este proyecto se realizó en un ambiente de Anaconda 4.3.30 llamado PointCloudLM
 
-Para instalar Anaconda, dirgirse a:
-[Página de Anaconda](https://www.anaconda.com/download/).<br>
+Para instalar Anaconda, dirgirse a su  [página de descarga](https://www.anaconda.com/download/).
 
 # Instalación del ambiente PointCloudLM
 * Una vez instalado Anaconda, abrir el prompt y ejecutar el siguiente comando:
