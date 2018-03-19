@@ -39,6 +39,7 @@ deactivate
 ## IDE Python
 
 En nuestro proyecto se empleo Pycharm como IDE de desarrollo:
+Para
 
-https://www.jetbrains.com/pycharm/download/
+Para instalar Pycharm, dirgirse a su  [página de descarga](https://www.jetbrains.com/pycharm/download/)
 
