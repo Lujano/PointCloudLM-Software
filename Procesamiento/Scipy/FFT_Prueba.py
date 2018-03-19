@@ -55,9 +55,24 @@ def plotSpectrum(y,Fs):
      plt.ylabel('|Y(f)|')
 
 def main():
+
+    #try:
+        #with open("SenalSensorSerial.txt", "r") as out_file:
+            #lines = out_file.readlines()
+
+            #for line in lines:
+                #Lectura = np.fromstring(line, dtype=float, sep=' ')
+                #Y = np.vstack([Y, Lectura[1]])
+    #except:
+        #print("Error al abrir el archivo")
+        #out_file.close()
+
+
+
     Fs = 2000.0 # tasa de muestreo
+    #Fs = 0.5*10**-3
     Ts = 1.0/Fs # intervalo de tiempo
-    signal_vector = np.loadtxt('InfraPRUEBA2.out')
+    signal_vector = np.loadtxt('InfraNoLowpass.out')
     t_size = signal_vector.size
     t_vector = np.arange(0, Ts*t_size, Ts )
     y = signal_vector
@@ -70,7 +85,8 @@ def main():
     plt.plot(t_vector, signal_vector)
     plt.title("Se#al en tiempo")
 
-    plt.subplot(2,2,3)
+    #plt.subplot(2,2,3)
+    plt.figure()
     plotSpectrum(y, Fs)
     plt.title("Se#al en frecuencia")
     plt.show()
