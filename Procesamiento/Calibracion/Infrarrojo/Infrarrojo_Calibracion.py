@@ -43,7 +43,7 @@ def main():
         Dif = T_Final - T_Inicio
 
     close_port(port)
-    np.savetxt('Sensor_Data_NoMotor_NoFilter/Infra_80cm.out', Amplitud_matrix, fmt='%1.8e')
+    #np.savetxt('Sensor_Data_NoMotor_NoFilter/Infra_80cm.out', Amplitud_matrix, fmt='%1.8e')
     print("Media = {}, Dev = {}, Nmediciones = {} ".format(np.mean(Amplitud_matrix), np.std(Amplitud_matrix, ddof=1),
                                                            Amplitud_matrix.shape[0]))
     plt.hist(Amplitud_matrix, bins='auto')
