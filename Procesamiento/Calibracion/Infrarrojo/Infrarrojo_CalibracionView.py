@@ -5,7 +5,7 @@ import time
 
 
 def main():
-    Amplitud_matrix = np.loadtxt('InfraNoLowpass.out')
+    Amplitud_matrix = np.loadtxt('Infra_Especialcm.out')
     Ts = 0.5*10**-3
     t_size = Amplitud_matrix.size
     t_vector = np.arange(0, Ts * t_size, Ts)

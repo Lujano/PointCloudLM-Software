@@ -22,9 +22,10 @@ def main():
         Voltage_matrix = np.append(Voltage_matrix, [media])
 
     # Ajuste polinomial a data
-    order = 10# Orden del polinomio
+    order =10 # Orden del polinomio
     poly = np.polyfit(Voltage_matrix, Distance_matrix, order)
     p = np.poly1d(poly)
+    np.savetxt('Polinomio_Ajuste_Infra.out', poly, fmt='%1.8e')
 
     # Graficas
     plt.figure()
@@ -38,6 +39,12 @@ def main():
     time_cont = np.arange(0.8, 3, 0.01)
     plt.plot(time_cont, p(time_cont))
     plt.title("Polinomio orden {} ajustado continuo".format(order))
+    plt.subplot(2, 2, 4)
+    plt.scatter(Voltage_matrix, Distance_matrix, c = 'g')
+    plt.subplot(2, 2, 4)
+    plt.scatter(Voltage_matrix, p(Voltage_matrix), c = 'r')
+    plt.title("Datos del sensor vs Polinomio")
+
     plt.show()
 
 

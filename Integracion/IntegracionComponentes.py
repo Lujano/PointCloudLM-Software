@@ -120,6 +120,7 @@ def main():
     data = np.zeros([0, 3])
     step2 = theta_0
 
+
     frequency = 2500  # Set Frequency To 2500 Hertz
     duration = 1000  # Set Duration To 1000 ms == 1 second
     winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento

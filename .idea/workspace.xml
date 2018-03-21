@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2adc106c-2bdc-4eba-8a8e-2405bcf80dbe" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_AjusteNoMotor.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tarea3_Electro4.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Calculo.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Calculo2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra_NOcm.out" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra_NOMotorcm.out" />
+      <change beforePath="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" afterPath="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
+      <change beforePath="$PROJECT_DIR$/Integracion/IntegracionComponentes.py" afterPath="$PROJECT_DIR$/Integracion/IntegracionComponentes.py" />
+      <change beforePath="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" afterPath="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
+      <change beforePath="$PROJECT_DIR$/Integracion/adquisicionInfra.pcd" afterPath="$PROJECT_DIR$/Integracion/adquisicionInfra.pcd" />
+      <change beforePath="$PROJECT_DIR$/Integracion/adquisicionUltra.pcd" afterPath="$PROJECT_DIR$/Integracion/adquisicionUltra.pcd" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra1hz.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra2.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraDC.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraDCB2.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraPRUEBA.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraPRUEBA2.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraPRUEBA3.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraPRUEBA4.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraPRUEBA5.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/InfraVamo.out" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Sensor_Data/Infra_NOcm.out" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infra_NOcm.out" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Sensor_Data/Ultra1_5cm.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Sensor_Data/Ultra2_5cm.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/SenalSensorSerial.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/TransformadaFourier.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,84 +36,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Infrarrojo_CalibracionView.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ultrasonido_Ajuste.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Infrarrojo_AjusteNoMotor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_AjusteNoMotor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Infrarrojo_Ajuste.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="141">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tarea3_Electro4.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tarea3_Electro4.py">
+      <file leaf-file-name="IntegracionComponentes2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="-917">
+              <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3DPlot_Fase1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Integracion/3DPlot_Fase1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2dcollections3d_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Descarga/2dcollections3d_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="25" />
               <folding>
-                <element signature="e#45#63#0" expanded="true" />
+                <element signature="e#172#211#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Infrarrojo_Calibracion_Ard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Infrarrojo_Calibracion2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="47" column="57" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FFT_LowPassMyData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="40" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,8 +81,8 @@
       <file leaf-file-name="Infrarrojo_Calibracion.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="86">
+              <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -129,10 +102,13 @@
     <findStrings>
       <find>Amplitud_matrix</find>
       <find>ext_angle</find>
+      <find>x</find>
     </findStrings>
     <replaceStrings>
       <replace>Data</replace>
       <replace>x</replace>
+      <replace>ext</replace>
+      <replace>et</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -150,19 +126,27 @@
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Data.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Sensor_Data/Ultrasonido_Ajuste.py" />
+        <option value="$PROJECT_DIR$/Tarea3_Electro4.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/TransformadaFourier.py" />
+        <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4.py" />
+        <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta1.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Sensor_Data/Ultrasonido_Ajuste.py" />
+        <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta2.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
-        <option value="$PROJECT_DIR$/Tarea3_Electro4.py" />
+        <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes.py" />
+        <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
+        <option value="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1682" />
+    <option name="y" value="76" />
     <option name="width" value="683" />
     <option name="height" value="744" />
   </component>
@@ -191,12 +175,17 @@
               <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="PointCloud" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,15 +194,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido\Sensor_Data" />
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Scipy" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Server\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido\Sensor_Data" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Scipy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,20 +217,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tarea3_Electro4">
-    <configuration name="FFT_Prueba" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.3DPlot_Fase1">
+    <configuration name="3DPlot_Fase1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Scipy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Integracion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -265,7 +254,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Infrarrojo_CalibracionView" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Infrarrojo_Calibracion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -277,25 +266,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Tarea3_Electro4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="IntegracionComponentes2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Integracion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tarea3_Electro4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -320,19 +309,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FFT_Prueba" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Ultrasonido_Ajuste" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Tarea3_Electro4" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Ultrasonido_Ajuste" />
+      <item index="3" class="java.lang.String" itemvalue="Python.IntegracionComponentes2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.3DPlot_Fase1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Tarea3_Electro4" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Ultrasonido_Ajuste" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Infrarrojo_CalibracionView" />
-        <item index="4" class="java.lang.String" itemvalue="Python.FFT_Prueba" />
+        <item index="0" class="java.lang.String" itemvalue="Python.3DPlot_Fase1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.IntegracionComponentes2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Ultrasonido_Ajuste" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
       </list>
     </recent_temporary>
   </component>
@@ -353,15 +342,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40775195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39427662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14614122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17127071" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -381,17 +370,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31034482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40775195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44122022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -404,122 +393,17 @@
           <url>file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://D:/Descarga/2dcollections3d_demo.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/Server_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/Server_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/Server_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -546,7 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,13 +483,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Sensor_Data/Infra20cm.out" />
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="3" lean-forward="false" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Server/camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -618,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Adquisicion/AdquisicionDEMO/Lectura potenciometro/PotPlot_Estatico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -677,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/InfraNoLowpass.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -691,66 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="47" column="57" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPassMyData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_AjusteNoMotor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,21 +567,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+    <entry file="file://$PROJECT_DIR$/Tarea3_Electro4.py" />
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_AjusteNoMotor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion_Ard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_LowPass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Tarea3_Electro4.py" />
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Scipy/FFT_Prueba.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adquisicion/AdquisicionDEMO/Lectura potenciometro/PotPlot_Estatico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/Trimestre 11/Electro4/Electro 4/Tarea3/Tarea3_Electro4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/3dclass2/Lib/site-packages/scipy/optimize/zeros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="393" column="0" lean-forward="true" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4.py" />
+    <entry file="file://D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="173" column="37" lean-forward="false" selection-start-line="173" selection-start-column="37" selection-end-line="173" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tarea3_Electro4.py">
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/SenalSensorSerial.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/TransformadaFourier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_calibracion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Descarga/subplot3d_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Descarga/2dcollections3d_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="25" />
           <folding>
-            <element signature="e#45#63#0" expanded="true" />
+            <element signature="e#172#211#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-917">
+          <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/3DPlot_Fase1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

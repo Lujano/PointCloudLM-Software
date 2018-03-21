@@ -22,9 +22,10 @@ def main():
         Voltage_matrix = np.append(Voltage_matrix, [media])
 
     # Ajuste polinomial a data
-    order = 5 # Orden del polinomio
+    order = 10 # Orden del polinomio
     poly = np.polyfit(Distance_matrix, Voltage_matrix, order)
     p = np.poly1d(poly)
+
 
     #Graficas
     plt.figure()
