@@ -123,6 +123,10 @@ def main():
     data2 = np.zeros([0, 3])
     step2 = theta_90
 
+    # Cargar polinomio calibrado al infrarrojo
+    poly_infra = np.loadtxt('../Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra.out')
+    poly = np.poly1d(poly_infra)
+
     frequency = 2500  # Set Frequency To 2500 Hertz
     duration = 1000  # Set Duration To 1000 ms == 1 second
     winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento
@@ -136,9 +140,12 @@ def main():
         n_canales = detect_data1(port)
         data1_in = port.read(2 * n_canales)
         canal_n1 = (2**7) * ord(data1_in[0]) + ord(data1_in[1])
-        infrarrojo = canal_n1 *1023/(2**12-1)  # Escalamiento
+        infrarrojo = canal_n1 *3.1/(2**12-1)  # Escalamiento
         if infrarrojo != 0.0:
-            infra= 17569.7 * (infrarrojo** (-1.2062)) # medida en cm
+            infra=poly(infrarrojo) # medida en cm
+            if not (infra < 55.0 and infra> 0.0):
+                infra = 0
+
         else:
             infra = 0
         echo = (2 ** 15) * ord(data1_in[2]) + (2 ** 8) * ord(data1_in[3]) + (2 ** 7) * ord(data1_in[4]) + ord(data1_in[5])
