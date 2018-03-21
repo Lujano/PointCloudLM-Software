@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 def open_port():
-    ser = serial.Serial('COM12', 115200)
+    ser = serial.Serial('COM8', 115200)
 
     return ser
 
@@ -43,7 +43,7 @@ def main():
         data1_in = port.read(2*n_canales)
         canal_n1 = (2 ** 15) * ord(data1_in[0]) + (2 ** 8) * ord(data1_in[1]) + (2 ** 7) * ord(data1_in[2]) + ord(data1_in[3])
         y = canal_n1*3.1/(2**12-1) # Escalamiento, el voltaje de ref de adc es 3.1
-        y = y/24
+        y = y/16
         print(y)
         Amplitud_matrix = np.append(Amplitud_matrix, [y])
         T_Final = time.time()
