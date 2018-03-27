@@ -36,7 +36,7 @@ def main():
     plt.scatter(Voltage_matrix, p(Voltage_matrix))
     plt.title("Polinomio orden {} ajustado a la data".format(order))
     plt.subplot(2, 2, 3)
-    time_cont = np.arange(0.8, 3, 0.01)
+    time_cont = np.arange(0.8, 2.4, 0.01)
     plt.plot(time_cont, p(time_cont))
     plt.title("Polinomio orden {} ajustado continuo".format(order))
     plt.subplot(2, 2, 4)

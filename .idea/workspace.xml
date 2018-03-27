@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2adc106c-2bdc-4eba-8a8e-2405bcf80dbe" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/OpenCV/Camera/Camera3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/OpenCV/Camera/MeanColor.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Fase2Color.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PointCloud/Codigo/Exam_surfColor.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Calibracion_Camera.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Data_Calibracion.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" afterPath="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
-      <change beforePath="$PROJECT_DIR$/OpenCV/Camera/output3.avi" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector3py" afterPath="$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector3py" />
-      <change beforePath="$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Rango.py" afterPath="$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Rango.py" />
-      <change beforePath="$PROJECT_DIR$/PointCloud/Data/inliers.pcd" afterPath="$PROJECT_DIR$/PointCloud/Data/inliers.pcd" />
-      <change beforePath="$PROJECT_DIR$/PointCloud/Ejemplos/statistical_outlier_fiter.py" afterPath="$PROJECT_DIR$/PointCloud/Ejemplos/statistical_outlier_fiter.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py" />
+      <change beforePath="$PROJECT_DIR$/OpenCV/Camera/Camera3.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py" />
       <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,13 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Infrared_Extraction.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py">
+      <file leaf-file-name="Pixel_Fun.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+            <state relative-caret-position="153">
+              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding>
-                <element signature="e#441#459#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,9 +46,55 @@
       <file leaf-file-name="Infrarrojo_Ajuste.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="323">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera_Ajuste.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Seguidor_distancia.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandBlueDetector.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-148">
+              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+              <folding>
+                <element signature="e#149#167#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,6 +116,7 @@
       <find>x</find>
       <find>port</find>
       <find>Amplitud</find>
+      <find>Voltage_matrix</find>
     </findStrings>
     <replaceStrings>
       <replace>Data</replace>
@@ -75,6 +124,7 @@
       <replace>ext</replace>
       <replace>et</replace>
       <replace>Distance</replace>
+      <replace>distance_cm</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -110,15 +160,21 @@
         <option value="$PROJECT_DIR$/OpenCV/Camera/MeanColor.py" />
         <option value="D:/Documents/Projects/Proyectos/Emulacion de Compuertas Cuánticas en FPGA/Respaldo Pendrive/Pyserial_2/Quantum_Interface.py" />
         <option value="$PROJECT_DIR$/PointCloud/Codigo/Exam_surfColor.py" />
-        <option value="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
         <option value="$PROJECT_DIR$/OpenCV/Camera/Camera3.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Calibracion_Camera.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Sensor_Data/Data_Calibracion.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrarrojo_Ajuste.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Data_Calibracion.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py" />
+        <option value="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
       </list>
     </option>
   </component>
@@ -152,6 +208,17 @@
             <path>
               <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="OpenCV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="OpenCV" type="462c0819:PsiDirectoryNode" />
+              <item name="Camera" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
@@ -192,16 +259,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido" />
-      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Server\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Camara" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\PointCloud\Codigo" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido\Sensor_Data" />
       <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Scipy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Camara" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Infrarrojo" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Calibracion\Ultrasonido" />
+      <recent name="C:\Users\Luis Lujano\Documents\GitHub\PointCloud-Software\Procesamiento\Server\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,26 +285,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Infrared_Extraction">
-    <configuration name="Calibracion_Camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Camera2">
+    <configuration name="Camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV/Camera" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Calibracion_Camera.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV/Camera/Camera.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Infrared_Extraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Camera2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV/Camera" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PointCloud-Software" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Camera_Ajuste" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -247,7 +334,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,56 +358,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Infrarrojo_Calibracion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Seguidor_distancia" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="segment_Bluehand" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OpenCV/2-scenesegmentation/codes/exercices" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OpenCV/2-scenesegmentation/codes/exercices/segment_Bluehand.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Calibracion_Camera" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-      <item index="3" class="java.lang.String" itemvalue="Python.segment_Bluehand" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Infrared_Extraction" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Camera_Ajuste" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Camera" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Camera2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Infrared_Extraction" />
-        <item index="1" class="java.lang.String" itemvalue="Python.segment_Bluehand" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Calibracion_Camera" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Camera2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Camera" />
         <item index="3" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Infrarrojo_Calibracion" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Camera_Ajuste" />
       </list>
     </recent_temporary>
   </component>
@@ -398,30 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/SenalSensorSerial.txt" />
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/TransformadaFourier.py" />
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Fase2_Color.py" />
     <entry file="file://D:/Descarga/2dcollections3d_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -501,20 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Control/Servos/Servo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -564,19 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Adquisicion/AdquisicionDEMO/Lectura potenciometro/PotPlot_Estatico.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,26 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Sensor_Data/Image_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Sensor_Data/Image_1.jpg" />
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,17 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Calibracion_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1156">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,9 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,9 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="10" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,24 +713,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Sensor_raw_Data.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Infrared_Extraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="107">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="e#441#459#0" expanded="true" />
+            <element signature="e#441#459#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Data_Calibracion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Calibracion_Camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding>
+            <element signature="e#149#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Linux/Tarea2/opencv-haar-classifier-training1/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2406">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
