@@ -6,7 +6,7 @@ import glob
 import os
 
 def main():
-    directory = 'Temporal_Si_motor'
+    directory = 'Sensor_Data2'
     a= os.listdir(directory)
     Distance_matrix = np.array([])
     Voltage_matrix = np.array([])

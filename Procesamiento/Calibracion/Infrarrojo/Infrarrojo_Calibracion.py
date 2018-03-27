@@ -33,7 +33,7 @@ def main():
     T_Final = time.time()
     Dif = T_Final-T_Inicio
     print("Inicio")
-    while(Dif < 5):  # Contar 12 segundos
+    while(Dif < 2):  # Contar 2 segundos
         n_canales = detect_data(port)
         data_in = port.read(2*n_canales)
         canal_n1 = (2**7)*ord(data_in[0])+ord(data_in[1])
@@ -43,7 +43,7 @@ def main():
         Dif = T_Final - T_Inicio
 
     close_port(port)
-    np.savetxt('Infra_Especialcm.out', Amplitud_matrix, fmt='%1.8e')
+    np.savetxt('Sensor_Data2/Infra_29cm.out', Amplitud_matrix, fmt='%1.8e')
     print("Media = {}, Dev = {}, Nmediciones = {} ".format(np.mean(Amplitud_matrix), np.std(Amplitud_matrix, ddof=1),
                                                            Amplitud_matrix.shape[0]))
     plt.hist(Amplitud_matrix, bins='auto')

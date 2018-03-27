@@ -82,7 +82,7 @@ def main():
     ni_theta = int(round((theta_90 - theta_0 + 1) / theta_step))  # numero de angulos theta
 
     data = np.zeros([0, 3])
-    r = 0
+    r = 1
     for theta in np.arange(0, 90, 90.0/(ni_theta/2)):
         for phi in np.arange (0, 180, 180.0/(ni_phi/2)):
             theta_prima = theta*np.pi/180

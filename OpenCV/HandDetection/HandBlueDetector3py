@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 # USAGE
 # python skindetector.py
 # python skindetector.py --video video/skin_example.mov

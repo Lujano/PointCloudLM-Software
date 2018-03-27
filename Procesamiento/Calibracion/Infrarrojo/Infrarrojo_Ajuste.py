@@ -6,7 +6,7 @@ import glob
 import os
 
 def main():
-    directory = 'Sensor_Data'
+    directory = 'Sensor_Data2'
     a= os.listdir(directory)
     Distance_matrix = np.array([])
     Voltage_matrix = np.array([])
@@ -22,10 +22,10 @@ def main():
         Voltage_matrix = np.append(Voltage_matrix, [media])
 
     # Ajuste polinomial a data
-    order =10 # Orden del polinomio
+    order =12 # Orden del polinomio
     poly = np.polyfit(Voltage_matrix, Distance_matrix, order)
     p = np.poly1d(poly)
-    np.savetxt('Polinomio_Ajuste_Infra.out', poly, fmt='%1.8e')
+    np.savetxt('Polinomio_Ajuste_Infra2.out', poly, fmt='%1.12e')
 
     # Graficas
     plt.figure()

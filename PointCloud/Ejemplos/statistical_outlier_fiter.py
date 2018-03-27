@@ -43,8 +43,8 @@ def main():
     p = pcl.PointCloud()
     p.from_file("../Data/adquisicion5.pcd")
     fil = p.make_statistical_outlier_filter()
-    fil.set_mean_k(50)
-    fil.set_std_dev_mul_thresh(1.0)
+    fil.set_mean_k(5)
+    fil.set_std_dev_mul_thresh(0.5)
     fil.filter().to_file("../Data/inliers.pcd")
 
     pointcloud1 = read_pcd_file("../Data/adquisicion5.pcd")
