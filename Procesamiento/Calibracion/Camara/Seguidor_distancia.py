@@ -5,6 +5,9 @@ import cv2
 from Pixel_Fun import Pixel_Fun
 
 
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output_Distance4_corr.avi',fourcc, 3.0, (640,480))
+
 def open_port():
     ser = serial.Serial('COM12', 115200)
 
@@ -46,7 +49,7 @@ def main():
         Dif = T_Final - T_Inicio
 
     T_Inicio = time.time()
-    while (Dif < 10):
+    while (Dif < 60):
 
         n_canales = detect_data(port)
         i +=1
@@ -59,7 +62,11 @@ def main():
         print("Distancia cm = {}. {}".format(d_sensor, y))
         centerx, centery, w1, h1 = Pixel_Fun(d_sensor)
         cv2.rectangle(frame, (centerx - w1, centery - h1), (centerx + w1, centery + h1), (255, 0, 0), 3)
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        cv2.putText(frame,"Distance = {0:0.2f} cm".format(d_sensor),(50, 50), font, 0.8, (0, 255, 0))
+        out.write(frame)
         cv2.imshow("Frame", frame)
+
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
@@ -67,6 +74,7 @@ def main():
         Dif = T_Final - T_Inicio
 
     cap.release()
+    out.release()
     close_port(port)
     cv2.destroyAllWindows()
 

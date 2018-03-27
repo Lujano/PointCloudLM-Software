@@ -18,7 +18,10 @@ def Pixel_Fun(distance_cm):
         return int(px(distance_cm)), int(py(distance_cm)), 20, 20
     elif distance_cm >= 16.0 and distance_cm <24.0:
         return int(px(distance_cm)), int(py(distance_cm)), 15, 15
+
+    elif distance_cm > 24.0 and distance_cm <35.0:
+        return 305, 265, 15, 15
     else:       # Ventana mas peque#a, objetivo mas lejano
-        return 300, 265, 10, 10
+        return 315, 258, 5, 5
 
 

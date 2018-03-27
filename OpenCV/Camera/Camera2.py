@@ -22,7 +22,6 @@ while (True):
    # print(w)
     cv2.line(frame, (w-140, 0), (w-140, h-1), red, 3)
     cv2.line(frame, (140, 0), (140, h - 1), red, 3)
-    cv2.putText(frame, "camera0", (10, 10 ), cv2.LINE_AA, 1, 1)
     cv2.imshow('frame', frame)
 
     # cv2.imshow('frame2', frame1)
