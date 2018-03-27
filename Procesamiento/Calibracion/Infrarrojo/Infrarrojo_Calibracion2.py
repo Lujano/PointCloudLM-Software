@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 def open_port():
-    ser = serial.Serial('COM12', 115200)
+    ser = serial.Serial('COM8', 115200)
 
     return ser
 
