@@ -1,17 +1,2 @@
 #Ignorar metadata
-**/.metadata
-**/RemoteLaunch
-**/RemoteSystemsTempFiles
-**/FLASH
-**/Documentation
-**/.settings
-**/Project_Settings
-**/Project_Headers
-**/Lib
-
-*.cproject
-*.project
-*.g_c
-*.g_x
-*.xml
-*.cwGeneratedFileSetLog
+**/.idea
