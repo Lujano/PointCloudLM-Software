@@ -4,7 +4,8 @@
 # --> conda create --name 3dclass --channel ccordoba12 python=2.7 pcl python-pcl numpy matplotlib mayavi
 """
 En este codigo ya se tiene calibrado el infrarrojo a traves de un ajuste polinomial
-no se toman 16 medidas del valor del adc sino una sola
+y se toman 16 medidas del valor del adc
+Se a#ade la camara para obtener el color del punto bajo medicion
 """
 import pcl
 from mayavi import mlab
@@ -127,14 +128,14 @@ def main():
     step2 = theta_90
 
     # Cargar polinomio calibrado al infrarrojo
-    poly_infra = np.loadtxt('../Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra.out')
+    poly_infra = np.loadtxt('../Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra2.out')
     poly = np.poly1d(poly_infra)
 
     frequency = 2500  # Set Frequency To 2500 Hertz
     duration = 1000  # Set Duration To 1000 ms == 1 second
     winsound.Beep(frequency, duration)  # beep lindo para empezar el movimiento
 
-    while (step2 <= theta_0-6):  # Contar 10 segundos
+    while (step2 <= theta_90+39):  # Contar 10 segundos
         #ret, frame = cap.read()
         #cv2.imshow('frame', frame)
         #cv2.imshow('frame2', frame1)
@@ -142,7 +143,9 @@ def main():
             break
         n_canales = detect_data1(port)
         data1_in = port.read(2 * n_canales)
-        canal_n1 = (2**7) * ord(data1_in[0]) + ord(data1_in[1])
+        canal_n1 = (2 ** 15) * ord(data1_in[0]) + (2 ** 8) * ord(data1_in[1]) + (2 ** 7) * ord(data1_in[2]) + \
+                   ord((data1_in[3]))
+        canal_n1 = canal_n1 / 16.0 # promedio de 16 mediciones
         infrarrojo = canal_n1 *3.1/(2**12-1)  # Escalamiento
         if infrarrojo != 0.0:
             infra=poly(infrarrojo) # medida en cm
@@ -151,9 +154,9 @@ def main():
 
         else:
             infra = 0
-        echo = (2 ** 15) * ord(data1_in[2]) + (2 ** 8) * ord(data1_in[3]) + (2 ** 7) * ord(data1_in[4]) + ord(data1_in[5])
-        step1 = (2 ** 7) * ord(data1_in[6]) + ord(data1_in[7])
-        step2 = (2 ** 7) * ord(data1_in[8]) + ord(data1_in[9])
+        echo = (2 ** 15) * ord(data1_in[4]) + (2 ** 8) * ord(data1_in[5]) + (2 ** 7) * ord(data1_in[6]) + ord(data1_in[7])
+        step1 = (2 ** 7) * ord(data1_in[8]) + ord(data1_in[9])
+        step2 = (2 ** 7) * ord(data1_in[10]) + ord(data1_in[11])
 
         phi_prima = step1
         theta_prima = step2
@@ -163,8 +166,8 @@ def main():
 
             dhs = 2
             dys = 13
-            r2 = np.sqrt( (infra/10.0+dys)**2+dhs**2)
-            r1 = np.sqrt( (echo/580.0+dys)**2+dhs**2)  # +0.12#metros
+            r2 = np.sqrt( (infra+dys)**2+dhs**2)
+            r1 = np.sqrt( (echo/58.0+dys)**2+dhs**2)  # +0.12#metros
             theta = theta *theta_resol*np.pi / 180.0
             phi = phi *phi_resol*np.pi / 180.0
 
@@ -206,8 +209,8 @@ def main():
 
     mlab.show()
     pointcloud2 = data2
-    write_pcd_file(pointcloud1, "adquisicionUltra.pcd")
-    write_pcd_file(pointcloud2, "adquisicionInfra.pcd")
+    write_pcd_file(pointcloud1, "adquisicionUltraOso.pcd")
+    write_pcd_file(pointcloud2, "adquisicionInfraOso.pcd")
 
 
 if __name__ == '__main__': main()

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2adc106c-2bdc-4eba-8a8e-2405bcf80dbe" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Integracion/IntegracionComponentes3.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" afterPath="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py" />
-      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" />
+      <change beforePath="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" afterPath="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
+      <change beforePath="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" afterPath="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
+      <change beforePath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" afterPath="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Seguidor_distancia.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Seguidor_distancia.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -28,10 +29,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="IntegracionComponentes2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegracionComponentes3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="212" column="52" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Infrarrojo_Calibracion.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Infrarrojo_Calibracion2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="47" column="126" lean-forward="false" selection-start-line="47" selection-start-column="113" selection-end-line="47" selection-end-column="126" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3DPlot_Fase1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Integracion/3DPlot_Fase1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Pixel_Fun.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="374">
               <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
@@ -41,7 +92,7 @@
       <file leaf-file-name="domino.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Respaldo lujano/Mis Codigos/domino.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="765">
               <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
               <folding>
                 <element signature="e#194#231#0" expanded="true" />
@@ -53,7 +104,7 @@
       <file leaf-file-name="Camera2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="527">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -112,19 +163,16 @@
         <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Ultrasonido/Ultrasonido_Ajuste.py" />
         <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes.py" />
-        <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
         <option value="$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Rango.py" />
         <option value="$PROJECT_DIR$/PointCloud/Ejemplos/statistical_outlier_fiter.py" />
         <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta2.py" />
         <option value="D:/Documents/Trimestre 11/Electro4/Segundo Parcial/Parcial2_Electro4_pregunta1.py" />
-        <option value="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
         <option value="$PROJECT_DIR$/PointCloud/Codigo/3DPlot_Fase2Color.py" />
         <option value="$PROJECT_DIR$/OpenCV/HandDetection/HandBlueDetector3py" />
         <option value="$PROJECT_DIR$/OpenCV/Camera/MeanColor.py" />
         <option value="D:/Documents/Projects/Proyectos/Emulacion de Compuertas Cuánticas en FPGA/Respaldo Pendrive/Pyserial_2/Quantum_Interface.py" />
         <option value="$PROJECT_DIR$/PointCloud/Codigo/Exam_surfColor.py" />
         <option value="$PROJECT_DIR$/OpenCV/Camera/Camera3.py" />
-        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/DataView_Demostracion.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py" />
@@ -138,6 +186,10 @@
         <option value="$PROJECT_DIR$/OpenCV/Camera/Camera2.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py" />
         <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py" />
+        <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes2.py" />
+        <option value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py" />
+        <option value="$PROJECT_DIR$/Integracion/IntegracionComponentes3.py" />
+        <option value="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
       </list>
     </option>
   </component>
@@ -165,6 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,44 +228,12 @@
             <path>
               <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenCV" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenCV" type="462c0819:PsiDirectoryNode" />
-              <item name="Camera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="Calibracion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="Calibracion" type="462c0819:PsiDirectoryNode" />
-              <item name="Camara" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointCloud-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointCloud-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="Procesamiento" type="462c0819:PsiDirectoryNode" />
-              <item name="Calibracion" type="462c0819:PsiDirectoryNode" />
-              <item name="Infrarrojo" type="462c0819:PsiDirectoryNode" />
+              <item name="Integracion" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -248,7 +269,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Seguidor_distancia">
+  <component name="RunManager" selected="Python.3DPlot_Fase1">
+    <configuration name="3DPlot_Fase1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Integracion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PointCloud-Software" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Integracion/3DPlot_Fase1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,37 +324,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Camera_Ajuste" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="IntegracionComponentes3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Integracion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Infrarrojo_Ajuste" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PointCloud-Software" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Ajuste.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Integracion/IntegracionComponentes3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,19 +361,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Camera_Ajuste" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Camera" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Camera2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Camera" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Camera2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.IntegracionComponentes3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.3DPlot_Fase1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Camera2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Camera" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Infrarrojo_Ajuste" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Camera_Ajuste" />
+        <item index="0" class="java.lang.String" itemvalue="Python.3DPlot_Fase1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.IntegracionComponentes3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Seguidor_distancia" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Camera2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Camera" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +402,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3825944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3825944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -411,13 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/3dclass2/Lib/site-packages/pyface/qt/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PointCloud/Codigo/mlab_tests_simple_surf_animation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -452,13 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Integracion/3DPlot_Fase1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="79" column="44" lean-forward="false" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -539,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
@@ -561,25 +561,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_CalibracionView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -650,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#441#459#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,39 +650,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera3.py" />
     <entry file="file://D:/Linux/Tarea2/opencv-haar-classifier-training1/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2406">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Codigos IMAG Python TUtorial/domino.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Codigos IMAG Python TUtorial/domino.py" />
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Camera_Ajuste.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,9 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,15 +694,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
           <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding>
-            <element signature="e#149#167#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Respaldo lujano/Mis Codigos/domino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="765">
           <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
@@ -752,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenCV/Camera/Camera2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="527">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -762,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Pixel_Fun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="374">
           <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
@@ -770,11 +727,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Camara/Seguidor_distancia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="47" column="126" lean-forward="false" selection-start-line="47" selection-start-column="113" selection-end-line="47" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procesamiento/Calibracion/Infrarrojo/Infrarrojo_Calibracion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/IntegracionComponentes3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="212" column="52" lean-forward="false" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Integracion/3DPlot_Fase1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

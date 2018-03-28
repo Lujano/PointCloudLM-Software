@@ -1,3 +1,7 @@
+"""
+Aqui se implemento tomar 16 mediciones para tener un promedio del infrarrojo
+"""
+
 import serial
 import matplotlib.pyplot as plt
 import numpy as np

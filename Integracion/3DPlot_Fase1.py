@@ -76,7 +76,7 @@ def transform_pointcloud(transf_matrix, pointcloud):
 def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
-    pointcloud = read_pcd_file("adquisicionUltra.pcd")
+    pointcloud = read_pcd_file("adquisicionInfraOso.pcd")
     print("numero de puntos = {}".format(pointcloud.shape[0]))
     viewer_pointcloud2(pointcloud)
 
