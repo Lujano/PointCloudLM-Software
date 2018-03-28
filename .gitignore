@@ -1,5 +1,4 @@
 #Ignorar metadata
-**/.idea
-*/.idea
-*workspace.xml
+**.idea
+
 
