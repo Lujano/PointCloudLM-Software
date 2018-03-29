@@ -65,6 +65,7 @@ xs = pointcloud[:, 0]
 ys =  pointcloud[:, 1]
 zs =  pointcloud[:, 2]
 color = np.cos(zs)
+print(color[0:10])
 ax.scatter(xs, ys, zs, c=color)
 
 ax.set_xlabel('X Label')

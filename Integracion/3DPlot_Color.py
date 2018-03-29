@@ -1,0 +1,42 @@
+'''
+==============
+3D scatterplot
+==============
+
+Demonstration of a basic scatterplot in 3D.
+'''
+
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+import pcl
+
+
+# Read a .pcd file, just give the path to the file. The function will return the pointcloud as a numpy array.
+def read_pcd_file(input_filename):
+    return pcl.load(input_filename).to_array()
+
+
+def randrange(n, vmin, vmax):
+    '''
+    Helper function to make an array of random numbers having shape (n, )
+    with each number distributed Uniform(vmin, vmax).
+    '''
+    return (vmax - vmin)*np.random.rand(n) + vmin
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+pointcloud = np.loadtxt('adquisicionInfraOso2.out')
+color  = np.loadtxt('adquisicionColorOso2.out')
+print("Numero de datos: {}".format(pointcloud.shape[0]))
+xs = pointcloud[:, 0]
+ys =  pointcloud[:, 1]
+zs =  pointcloud[:, 2]
+ax.scatter(xs, ys, zs, c=color)
+
+ax.set_xlabel('X Label')
+ax.set_ylabel('Y Label')
+ax.set_zlabel('Z Label')
+
+plt.show()
