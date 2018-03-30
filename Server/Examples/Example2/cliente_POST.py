@@ -10,9 +10,10 @@ import urllib
 # response.close()
 
 params = {'nm': '111'}
-
-for i in range(1, 10):
-    req = urllib2.Request("http://127.1.1.1:80/login", urllib.urlencode(params))
+print("start")
+for i in range(1, 1000):
+    req = urllib2.Request("http://127.1.1.1:80/login" +'?'+ urllib.urlencode(params))
     res = urllib2.urlopen(req)
     data = res.read()
-    print(data)
+print("end")
+res.close()

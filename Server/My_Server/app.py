@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from importlib import import_module
 import os
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 from camera_opencv import  Camera
 # import camera driver
 # if os.environ.get('opencv'):
@@ -35,6 +35,15 @@ def video_feed():
     return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/login',methods = ['POST', 'GET'])
+def login():
+   if request.method == 'POST':
+      user = request.form['nm']
+      print("ja")
+      return "Fine2" + user
+   else:
+      user = request.args.get('nm')
+      return "OK"
 
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run(host = '127.1.1.1', debug= True, threaded=True, port= 80)
