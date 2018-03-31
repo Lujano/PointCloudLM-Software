@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""Para probar example 5 server de esp8266 arduino"""
 
 import urllib2
 import urllib
@@ -11,9 +12,10 @@ import urllib
 
 params = {'nm': '111'}
 print("start")
-for i in range(1, 100):
-    req = urllib2.Request("http://127.1.1.1:80/login"+'?'+'nm=Jose')
+for i in range(1, 10):
+    req = urllib2.Request("http://192.168.1.104:80/Server"+'?'+'nm=Jose&nm2=ANA')
     res = urllib2.urlopen(req)
     data = res.read()
+    print(data)
 print("end")
 res.close()

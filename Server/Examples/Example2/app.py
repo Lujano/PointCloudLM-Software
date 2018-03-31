@@ -16,5 +16,5 @@ def login():
       return "Fine2"+user
 
 if __name__ == '__main__':
-    app.run(host = '127.1.1.1', debug= True, threaded=True, port= 8000)
+    app.run(host = '127.1.1.1', debug= False, threaded=True, port= 80)
 

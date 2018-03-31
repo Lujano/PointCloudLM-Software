@@ -11,8 +11,8 @@ import urllib
 
 params = {'nm': '111'}
 print("start")
-for i in range(1, 100):
-    req = urllib2.Request("http://127.1.1.1:80/login"+'?'+'nm=Jose')
+for i in range(1, 1000):
+    req = urllib2.Request("http://127.1.1.1:80/login" +'?'+ urllib.urlencode(params))
     res = urllib2.urlopen(req)
     data = res.read()
 print("end")
