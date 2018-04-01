@@ -62,8 +62,7 @@ def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
     #pointcloud = read_pcd_file("adquisicionUltra.pcd")
-    pointcloud = read_pcd_file("adquisicionInfraOso.pcd")
-    print(pointcloud[0])
+    pointcloud = read_pcd_file("adquisicionInfra3.pcd")
     print(pointcloud.shape[0])
     viewer_pointcloud(pointcloud)
 
