@@ -21,7 +21,7 @@ def write_pcd_file(pointcloud, output_path):
 # To visualize the passed pointcloud.
 def viewer_pointcloud(pointcloud):
     mlab.figure(bgcolor=(1, 1, 1))
-    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere', scale_factor = 0.5)
+    mlab.points3d(pointcloud[:, 0], pointcloud[:, 1], pointcloud[:, 2], color=(0, 1, 0), mode='sphere', scale_factor = 0.15)
     mlab.show()
     return
 
@@ -62,7 +62,7 @@ def main():
 
     # Exercise 1 - Ransac to detect the Main Plane
     #pointcloud = read_pcd_file("adquisicionUltra.pcd")
-    pointcloud = read_pcd_file("adquisicionInfra3.pcd")
+    pointcloud = read_pcd_file("table_scene_mug_stereo_textured.pcd")
     print(pointcloud.shape[0])
     viewer_pointcloud(pointcloud)
 
@@ -70,3 +70,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

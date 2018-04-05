@@ -30,13 +30,13 @@ theta_start = theta_90 # 90 grados
 theta_end = theta_90+40 # 80 grados
 
 command = 0
-url_FREERUN = "http://192.168.1.104:80/Server"+'?step1='+ str(step1)\
+url_FREERUN = "http://192.168.1.102:8000/Server"+'?step1='+ str(step1)\
               +'&step2='+str(step2)+'&commad=OK'
-url_POINTCLOUD ="http://192.168.1.104:80/Server"+'?phi_start='+ str(phi_start)\
+url_POINTCLOUD ="http://192.168.1.102:8000/Server"+'?phi_start='+ str(phi_start)\
                 +'&phi_end='+str(phi_end)+'&commad=POINTCLOUD'+'&theta_start=' + str(theta_start)\
                 +'&theta_end='+str(theta_end)
 print("start")
-req = urllib2.Request(url_POINTCLOUD)
+req = urllib2.Request(url_FREERUN)
 res = urllib2.urlopen(req)
 data = res.read()
 print(data)

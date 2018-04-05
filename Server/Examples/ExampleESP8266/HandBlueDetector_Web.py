@@ -8,7 +8,7 @@ import urllib
 import time
 ip_server = "192.168.1.101"
 #ip_server = "127.1.1.1"
-port_server = "80"
+port_server = "8000"
 
 
 
@@ -136,7 +136,7 @@ step1 = phi_180
 step2 = theta_90
 ESP8266_send(ip_ESP8266, step1, step2)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 while True:
 
 
@@ -250,9 +250,9 @@ while True:
 
 
     # show the skin in the image along with the mask0
-    cv2.imshow("Draw", drawing)
+    #cv2.imshow("Draw", drawing)
     cv2.imshow("Image", frame)
-    cv2.imshow("MOG2", skinMask)
+    #cv2.imshow("MOG2", skinMask)
     # if the 'q' key is pressed, stop the loop
     if cv2.waitKey(1) & 0xFF == ord("q"):
         close_port()
