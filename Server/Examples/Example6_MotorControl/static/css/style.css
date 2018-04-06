@@ -1,0 +1,50 @@
+
+body{
+	background:  lightblue;
+	background-image: url("img_tree.gif"), url("paper.gif");
+	color: white;
+	padding:1%;
+	text-align: center;
+	background-image: url("../img/Reno.png");
+	background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+p {
+
+    color: green;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+.button {
+	font: bold 15px Arial;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCC CCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+}
+
+img{
+	display: display: inline-block
+}

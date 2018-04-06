@@ -44,6 +44,14 @@ def cam():
     }
     return render_template('HandTracking.html', **templateData)
 
+
+@app.route('/Scroll')
+def Scroll():
+    """Scroll"""
+
+
+    return render_template('Scroll.html')
+
 @app.route('/PointCloud',  methods = ['GET', 'POST'])
 def PointCloud():
     """Video streaming home page."""
@@ -76,4 +84,4 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=False, threaded=True)
+    app.run(host='0.0.0.0', port=8000, debug= False, threaded=True)
