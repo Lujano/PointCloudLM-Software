@@ -1,4 +1,4 @@
-# PointCloud-Software
+# PointCloudLM-Software
 Software empleado en la implementación del sistema de generación de nubes de puntos
 
 # Prerrequisitos
