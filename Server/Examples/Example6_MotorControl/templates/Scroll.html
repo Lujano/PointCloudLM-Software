@@ -11,7 +11,7 @@
 #content {
     height: 800px;
     width: 2000px;
-    background-color: coral;
+    background-color: white;
 }
 </style>
 <p>Scroll inside the div element to display the number of pixels the content of div is scrolled horizontally and vertically.</p>
@@ -20,14 +20,42 @@
   <div id="content">Scroll inside me!</div>
 </div>
 
-<p id="demo"></p>
 
 <script>
+var band = 0;
+var max_scrollLeft;
+var max_scrollTop ;
+var form = document.createElement("FORM");
+form.action = "http://127.1.1.1:8000/Scroll"
+form.method = "POST";
+
+
 function myFunction() {
     var elmnt = document.getElementById("myDIV");
     var x = elmnt.scrollLeft;
     var y = elmnt.scrollTop;
-    document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+
+    if (band == 0) {
+    elmnt.scrollLeft = 10000; <!--Overflow para obtener max value-->
+    elmnt.scrollTop = 10000; <!--Overflow para obtener max value-->
+    max_scrollLeft = elmnt.scrollLeft;
+    max_scrollTop = elmnt.scrollTop;
+    elmnt.scrollLeft = x; <!--Reestablecer valores de scroll->
+    elmnt.scrollTop = y;
+    band = 1 ; <!--Solo enviar una vez el valor maximo del scroll-->
+     form.fieldset = "param1=" + max_scrollLeft +"&param2=" + max_scrollTop;
+    }
+   else {
+
+form.fieldset = "param1=" +  x +"&param2=" + y;
+form.submit()
+   }
+
+
+
+
+
+
 }
 </script>
 

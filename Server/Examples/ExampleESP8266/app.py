@@ -2,6 +2,7 @@
 """ En este codigo se recibe la variable nm desde el cliente mediante metodos POST GET"""
 from flask import Flask, render_template, Response
 from flask import request
+import time
 import numpy as np
 
 # Datos de motores calibrados
@@ -25,10 +26,12 @@ ip_client1 = "0.0.0.0"
 
 app = Flask(__name__)
 
-
+T_Inicio = time.time()
+T_Final = time.time()
+Dif = T_Final - T_Inicio
 @app.route('/ESP8266',methods = ['POST', 'GET'])
 def login():
-    global ip_ESP8266
+    global ip_ESP8266, step1, step2
     if request.method == 'POST':
         param1 = request.form['param1']
         param2 = request.form['param2']
@@ -46,7 +49,11 @@ def login():
         ip_ESP8266 = request.remote_addr
         print("ESP8266 Connected, ip  = {}".format(ip_ESP8266))
         return "OK"
-    else:
+    elif (param1 == "FREERUN"):
+        command  ="FREERUN"
+        return command +"&"+str(step1)+ "&" + str(step2)
+
+    else:  # Pointcloud
          Infra_data = int(param1)/16.0*3.1/(2**12-1)  # Convertir string a entero
          Ultra_data = int(param2)/58.0
          step1 = int(param3)*1.0
@@ -91,6 +98,23 @@ def HandTracking():
                 bandera = 1
         else:
                 return "Negative"
+
+@app.route('/Server',methods = ['POST', 'GET'])
+def Prueba():
+    global T_Final, T_Inicio
+    if request.method == 'GET':
+        T_Inicio = time.time()
+        Dif = T_Inicio-T_Final
+        print(Dif)
+        param1 = request.args.get('param1')
+        param2 = request.args.get('param2')
+
+        T_Final = time.time()
+
+
+        return  "OK"
+
+
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', debug= False, threaded=True, port= 8000)
 

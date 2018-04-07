@@ -3,8 +3,6 @@
 
 import urllib2
 import urllib
-
-
 # response = urllib2.urlopen('http://127.1.1.1:80/params?params1=Jorge')
 # print response.info()
 # html = response.read()

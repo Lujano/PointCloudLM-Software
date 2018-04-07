@@ -1,0 +1,14 @@
+{% macro render_field(field) %}
+    <p>
+        {{field.label}} <br>
+        {{ field(size = 32)}}
+    </p>
+    {% if field.errors %}
+    <ul>
+        {% for error in field.errors %}
+        <li> {{error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endmacro %}
