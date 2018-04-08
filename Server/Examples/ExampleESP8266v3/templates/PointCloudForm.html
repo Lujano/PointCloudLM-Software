@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>PointCloud Parameters</h2>
+    {% from "_macro.html" import render_field %}
+    <form name = "sentMessage" id = "contactForm" method="Post">
+		{{ render_field(form.phi_start)}}
+		{{ render_field(form.phi_end)}}
+		{{ render_field(form.theta_start)}}
+        {{ render_field(form.theta_end)}}
+		<div class="form-group col-xs-12">
+			<button type="submit" class = "btn btn-default">Send</button>
+
+		</div>
+    </form>
+{% endblock %}

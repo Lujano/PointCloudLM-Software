@@ -121,6 +121,21 @@ def gen(camera):
         frame = camera.get_frame()
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+
+
+@app.route('/PointCloud/Form',  methods = ['GET', 'POST'])
+def Form():
+    """Video streaming home page."""
+    PointCloud_Form = PointCloudForm(request.form)
+    timeNow = time.asctime(time.localtime(time.time()))
+
+    if request.method == 'POST' and PointCloud_Form.validate():
+        print PointCloud_Form.phi_start.data
+        print PointCloud_Form.phi_end.data
+        print PointCloud_Form.theta_start.data
+        print PointCloud_Form.theta_end.data
+    return render_template('PointCloud.html', time = timeNow, form = PointCloud_Form)
+
 @app.route('/video_feed')
 def video_feed():
     """Video streaming route. Put this in the src attribute of an img tag."""
