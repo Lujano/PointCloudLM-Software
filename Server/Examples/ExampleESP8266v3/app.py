@@ -9,18 +9,18 @@ from camera_opencv import Camera
 import cv2
 
 # Datos de motores calibrados
-phi_0 =228
+phi_0 = 228
 phi_180 = 36
 phi_resol = (phi_0-phi_180+1)/180.0
 
 theta_0 = 245
 theta_90 = 131
 theta_max = 100  # minimo angulo sin que el motor choque con la base
-theta_resol = (theta_0-theta_90 +1)/90.0
+theta_resol = (theta_0-theta_90 +1)/90.0 # pasos por angulo
 
 #Variables globales
-step1 = 0
-step2 = 0
+step1 = phi_0-97
+step2 = theta_90+57
 phi_start = phi_0
 phi_end = phi_180
 theta_start = theta_0
@@ -59,7 +59,7 @@ def index():
 
 @app.route('/ESP8266', methods = ['POST', 'GET'])
 def login():
-    global ip_ESP8266, step1, step2, system_state, pbi_start, phi_end, theta_start, theta_end
+    global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, phi_0, theta_0, theta_resol, phi_resol
     if request.method == 'POST':
         param1 = request.form['param1']
         param2 = request.form['param2']
@@ -69,48 +69,68 @@ def login():
         return "OK"
 
     else:
+        ESPstate = request.args.get('ESPstate')
         param1 = request.args.get('param1')
         param2 = request.args.get('param2')
         param3 = request.args.get('param3')
         param4 = request.args.get('param4')
         if (system_state == "ESP"): # Esperando que se conecta la ESP
-            if (param1 == "OK"):  # ESP8266 conectada
+            if (ESPstate == "OK"):  # ESP8266 conectada
                 ip_ESP8266 = request.remote_addr
                 print("ESP8266 Connected, ip  = {}".format(ip_ESP8266))
                 system_state = "FREERUN"
                 return "OK"
+            else:
+                command = "RESET"
+                system_state = "ESP"
+                return command
         elif( system_state == "FREERUN" ):
-            if(param1 == "FREERUN"): # Freerun
+            if(ESPstate == "FREERUN"): # Freerun
                 command  = "FREERUN"
                 return command +"&"+str(step1)+ "&" + str(step2)
-            else: # cambiar a estado FREERUN el sistema
+            elif (ESPstate == "POINTCLOUD"): # cambiar a estado FREERUN el sistema
                 step1 = phi_0 - 97  # Reiniciar posicion de los motores
                 step2 = theta_90 + 57
                 command  = "FREERUN"
                 return command +"&"+str(step1)+ "&" + str(step2)
+            elif (ESPstate == "OK"):
+                command = "RESET"
+                system_state = "ESP"
+                return  command
 
-        if (system_state == "POINTCLOUD") #  si un cliente hizo la peticion de pointcloud
-            if (param1 == "POINTCLOUD")  #  si la ESP esta Pointcloud
-                 Infra_data = int(param1)/16.0*3.1/(2**12-1)  # Convertir string a entero
-                 Ultra_data = int(param2)/58.0
-                 step1 = int(param3)*1.0
-                 step2 = int(param4)*1.0
-                 phi_prima = step1
-                 theta_prima = step2
-                 phi = phi_0 - phi_prima
-                 theta = theta_0 - theta_prima
-                 theta = theta * theta_resol
-                 phi = phi * phi_resol
-                 print("phi = {}, theta = {}".format(phi, theta))
-                 return "OK"
-            else :
-                url_POINTCLOUD = "http://192.168.1.102:8000/Server" + '?phi_start=' + str(phi_start) \
-                                 + '&phi_end=' + str(phi_end) + '&commad=POINTCLOUD' + '&theta_start=' + str(
-                    theta_start) \
-                                 + '&theta_end=' + str(theta_end)
+        if (system_state == "POINTCLOUD"): #  si un cliente hizo la peticion de pointcloud
+            if (ESPstate == "POINTCLOUD"):  #  si la ESP esta Pointcloud
+                if (param1 != "FINISH" and param2 != "FINISH"): # si la nube de punto no ha terminado
+                     Infra_data = int(param1)/16.0*3.1/(2**12-1)  # Convertir string a entero
+                     Ultra_data = int(param2)/58.0
+                     step11 = int(param3)*1.0
+                     step22 = int(param4)*1.0
+                     phi_prima = step11
+                     theta_prima = step22
+                     phi = phi_0 - phi_prima
+                     theta = theta_0 - theta_prima
+                     theta = theta / theta_resol
+                     phi = phi/ phi_resol
+                     print("Ultra_data = {0:0.2f}, Infra_data = {1:0.2f}, phi = {2:0.2f}, theta = {3:0.2f}".format(
+                     Ultra_data, Infra_data, phi, theta))
+                     return "OK"
+                else: # PoinCloud terminada
+                    step1 = phi_0 - 97  # reiniciar posicion de motor
+                    step2 = theta_90 + 57
+                    command = "FREERUN"
+                    system_state = "FREERUN"
+                    return command + "&" + str(step1) + "&" + str(step2)
+
+
+
+            elif (ESPstate == "FREERUN"):
                 command = "POINTCLOUD"
                 return  command + "&" + str(phi_start) +"&"+str(phi_end)+"&"+str(theta_start) + "&"+str(theta_end)
 
+            elif (ESPstate == "OK"):
+                command = "RESET"
+                system_state = "ESP"
+                return command
 
             # si la ESP esta en FREERUN
 
@@ -156,15 +176,22 @@ def video_feed():
 
 @app.route('/PointCloud/Form',  methods = ['GET', 'POST'])
 def Form():
+    global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, phi_resol, theta_resol,phi_0, theta_0
     """Video streaming home page."""
+
     PointCloud_Form = PointCloudForm(request.form)
     timeNow = time.asctime(time.localtime(time.time()))
 
     if request.method == 'POST' and PointCloud_Form.validate():
-        print PointCloud_Form.phi_start.data
-        print PointCloud_Form.phi_end.data
-        print PointCloud_Form.theta_start.data
-        print PointCloud_Form.theta_end.data
+        phi_start = phi_0 - int(round(int(PointCloud_Form.phi_start.data)*phi_resol))
+        phi_end = phi_0 - int(round(int(PointCloud_Form.phi_end.data) * phi_resol))
+        theta_start = theta_0 - int(round(int(PointCloud_Form.theta_start.data) * theta_resol))
+        theta_end = theta_0- int(round(int(PointCloud_Form.theta_end.data)*theta_resol))
+
+        print("PointCloudLM started")
+        print("Phi_start = {}, Phi_end = {}, Theta_start = {}, Theta_end = {}".format(phi_start, phi_end, theta_start,
+                                                                                      theta_end))
+        system_state = "POINTCLOUD"
         return render_template('PointCloudProcessing.html', time=timeNow)
     return render_template('PointCloudForm.html', time = timeNow, form = PointCloud_Form)
 

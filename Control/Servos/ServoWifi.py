@@ -2,7 +2,7 @@
 import time
 import winsound
 import requests
-ip_server = "192.168.1.100"
+ip_server = "192.168.1.125"
 #ip_server = "127.1.1.1"
 port_server = "8000"
 
