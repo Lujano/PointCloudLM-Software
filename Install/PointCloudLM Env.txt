@@ -1,0 +1,17 @@
+
+conda create --name radar --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy
+then:
+activate radar
+then:
+pip install opencv-python scipy
+
+and check if opencv was succesfully installed:
+
+python
+import cv2
+
+pip install flask
+pip install flask-wtf
+pip install requests  
+
+deactivate

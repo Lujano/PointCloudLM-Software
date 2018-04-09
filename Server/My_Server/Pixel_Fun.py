@@ -11,30 +11,30 @@ def Pixel_Fun(distance_cm, sensor):
 
     if (sensor == 1): # ultrasonido
         if distance_cm <2.0:  #(cm)
-            return 50, 370, 25, 25
+            return 50, 370, 20, 20
         elif distance_cm >= 2.0 and distance_cm <10.0:
-            return int(px(distance_cm)), int(py(distance_cm)), 25, 25
+            return int(px(distance_cm)), int(py(distance_cm)), 16, 16
         elif distance_cm >= 10.0 and distance_cm <16.0:
-            return int(px(distance_cm)), int(py(distance_cm)), 15, 15
+            return int(px(distance_cm)), int(py(distance_cm)), 13, 13
         elif distance_cm >= 16.0 and distance_cm <24.0:
-            return int(px(distance_cm)), int(py(distance_cm)), 10, 10
+            return int(px(distance_cm)), int(py(distance_cm)), 8, 8
 
         elif distance_cm > 24.0 and distance_cm <35.0:
-            return 305, 265, 15, 10
+            return 305, 265, 8, 8
         else:       # Ventana mas peque#a, objetivo mas lejano
             return 315, 258, 5, 5
     else: # sensor infrarrojo
         if distance_cm < 2.0:  # (cm)
-            return 640-50, 370, 30, 30
+            return 640-50, 370, 20, 20
         elif distance_cm >= 2.0 and distance_cm < 10.0:
-            return 640-int(px(distance_cm)), int(py(distance_cm)), 25, 25
+            return 640-int(px(distance_cm)), int(py(distance_cm)), 16, 16
         elif distance_cm >= 10.0 and distance_cm < 16.0:
-            return 640-int(px(distance_cm)), int(py(distance_cm)), 15, 15
+            return 640-int(px(distance_cm)), int(py(distance_cm)), 13, 13
         elif distance_cm >= 16.0 and distance_cm < 24.0:
-            return 640-int(px(distance_cm)), int(py(distance_cm)), 10, 10
+            return 640-int(px(distance_cm)), int(py(distance_cm)), 8, 8
 
         elif distance_cm > 24.0 and distance_cm < 35.0:
-            return 640-305, 265, 10, 10
+            return 640-305, 265, 8, 8
         else:  # Ventana mas peque#a, objetivo mas lejano
             return 640-315, 258, 5, 5
 

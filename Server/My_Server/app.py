@@ -253,10 +253,10 @@ def login():
                     # guardar data
                     pointcloud1 = data1
                     pointcloud2 = data2
-                    np.savetxt("Data/adquisicionUltra3.out", pointcloud1, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionInfra3.out", pointcloud2, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionColorInfra3.out", color_infra, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionColorUltr3.out", color_ultra, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionUltra_Pag.out", pointcloud1, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionInfra_Pag.out", pointcloud2, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionColorInfra_Pag.out", color_infra, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionColorUltra_Pag.out", color_ultra, fmt='%1.8e')
                     step1 = phi_0 - 97  # reiniciar posicion de motor
                     step2 = theta_0 - 57
                     command = "FREERUN"
