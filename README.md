@@ -57,5 +57,5 @@ Las librerias restantes (flask, flask-wtf, requests) se pueden instalar desde el
 
 ![](https://github.com/Lujano/PointCloudLM-Software/blob/master/Install/Install2.png)
 
-
+<br>[Home](#acondicionamiento-de-señales-analógicas)<br>
 
