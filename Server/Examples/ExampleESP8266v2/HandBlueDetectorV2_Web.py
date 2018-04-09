@@ -3,10 +3,9 @@
 # import the necessary packages
 import numpy as np
 import cv2
-import urllib2
-import urllib
 import time
-ip_server = "192.168.1.101"
+import requests
+ip_server = "192.168.1.125"
 #ip_server = "127.1.1.1"
 port_server = "8000"
 
@@ -20,7 +19,6 @@ def delay_s(tiempo):
         T_Final = time.time()
         Dif = T_Final - T_Inicio
     return
-
 def open_port():
     url_request = "http://"+ip_server+":"+port_server+"/HandTracking?param1=WHERE_IS_ESP8266"
     response =  "Negative"
@@ -29,10 +27,8 @@ def open_port():
     while response == "Negative" or response == "ESP8266_Is_No_Connected" :
         try :
             print("Connecting to Server")
-            req = urllib2.Request(url_request)
-            res= urllib2.urlopen(req)
-            response = res.read()
-            res.close()
+            req = requests.get(url_request)
+            response = req.content
             if response == "ESP8266_Is_No_Connected" or response == "Negative" :
                 print(response)
                 delay_s(10.0)
@@ -49,16 +45,14 @@ def open_port():
 
 
 def close_port():
-    url_request = "http://"+ ip_server + ":" + port_server + "/HandTracking?param1=PROCESS_END"
+    url_request = "http://"+ip_server + ":" + port_server + "/HandTracking?param1=PROCESS_END"
     response = "Negative"
 
     while response == "Negative":
         try:
             print("Finishing the connection")
-            req = urllib2.Request(url_request)
-            res = urllib2.urlopen(req)
-            response = res.read()
-            res.close()
+            req = requests.get(url_request)
+            response = req.content
             if response == "Negative":
                 print(response)
                 delay_s(10.0)
@@ -74,14 +68,17 @@ def close_port():
     return
 
 def ESP8266_send(ip, step1, step2): # el servo que controla phi (plano xy)
-    url_FREERUN = "http://"+ip+"/Server" + '?step1=' + str(step1) \
-                  + '&step2=' + str(step2) + '&commad=OK'
+    url_FREERUN = "http://"+ ip +":"+ port_server+ "/HandTracking" + '?step1=' + str(step1) \
+                  + '&step2=' + str(step2)
 
     try:
-        req = urllib2.Request(url_FREERUN)
-        res = urllib2.urlopen(req)
-        response = res.read()
-        res.close()
+        T_Inicio = time.time()
+
+        req = requests.get(url_FREERUN)
+        response = req.content
+        T_Final = time.time()
+        Dif = T_Final - T_Inicio
+        print(Dif)
         if response != "OK":
             print("Bad response ")
     except:
@@ -131,12 +128,12 @@ theta_90 = 131
 theta_max = 100  # minimo angulo sin que el motor choque con la base
 theta_resol = (-theta_90+theta_0 +1)/90.0
 
-ip_ESP8266 = open_port()
 step1 = phi_180
 step2 = theta_90
-ESP8266_send(ip_ESP8266, step1, step2)
-
 cap = cv2.VideoCapture(1)
+ESP8266_send(ip_server, step1, step2)
+
+
 while True:
 
 
@@ -234,7 +231,7 @@ while True:
             paso_theta = last_paso_theta
         else:
             step2 =  -paso_theta+theta_0
-            ESP8266_send(ip_ESP8266, step1, step2)
+            ESP8266_send(ip_server, step1, step2)
             print("theta {0:0.2f}, phi {0:0.2f}".format(paso_theta/theta_resol, paso_phi/phi_resol))
 
         if np.abs(paso_phi-last_paso_phi)>4:
@@ -242,7 +239,7 @@ while True:
         else:
 
             step1 = -paso_phi+phi_0
-            ESP8266_send(ip_ESP8266, step1, step2)
+            ESP8266_send(ip_server, step1, step2)
             print("theta {0:0.2f}, phi {0:0.2f}".format(paso_theta/theta_resol, paso_phi/phi_resol))
 
         last_paso_theta, last_paso_phi = paso_theta, paso_phi

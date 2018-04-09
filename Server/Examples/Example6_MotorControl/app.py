@@ -48,9 +48,19 @@ def cam():
 @app.route('/Scroll')
 def Scroll():
     """Scroll"""
+    if request.method == 'POST' and PointCloud_Form.validate():
+        print PointCloud_Form.phi_start.data
+        print PointCloud_Form.phi_end.data
+        print PointCloud_Form.theta_start.data
+        print PointCloud_Form.theta_end.data
+        return render_template('Scroll.html')
 
+    else:
+        param11 = request.args.get('param1')
+        param12 = request.args.get('param2')
+        print(param12)
+        return render_template('Scroll.html')
 
-    return render_template('Scroll.html')
 
 @app.route('/PointCloud',  methods = ['GET', 'POST'])
 def PointCloud():
@@ -63,7 +73,13 @@ def PointCloud():
         print PointCloud_Form.phi_end.data
         print PointCloud_Form.theta_start.data
         print PointCloud_Form.theta_end.data
-    return render_template('PointCloud.html', time = timeNow, form = PointCloud_Form)
+        return render_template('PointCloud.html', time = timeNow, form = PointCloud_Form)
+
+    else:
+        param11 = request.args.get('param1')
+        param12 = request.args.get('param2')
+        print(param12)
+        return " "
 
 
 def gen(camera):
@@ -84,4 +100,4 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug= False, threaded=True)
+    app.run(host='127.1.1.1', port=8000, debug= False, threaded=True)

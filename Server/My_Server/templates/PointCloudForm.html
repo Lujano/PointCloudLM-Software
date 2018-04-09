@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>PointCloud Processing</h2>
-    <h3><img src="{{ url_for('video_feed') }}" width="40%"></h3>
-    <h3>{{ time }}</h3>
+    <h2>PointCloud Parameters</h2>
     {% from "_macro.html" import render_field %}
     <form name = "sentMessage" id = "contactForm" method="Post">
-		{{l render_field(form.phi_start)}}
+		{{ render_field(form.phi_start)}}
 		{{ render_field(form.phi_end)}}
 		{{ render_field(form.theta_start)}}
         {{ render_field(form.theta_end)}}
@@ -13,8 +11,9 @@
 			<button type="submit" class = "btn btn-default">Send</button>
 
 		</div>
-	<hr>
-	<h3> Return to main page ==> <a href="/"class="button">RETURN</a></h3>
-	<hr>
     </form>
+
+    <hr>
+	<h3> Return to main page ==> <a href="/" class="button">RETURN</a></h3>
+	<hr>
 {% endblock %}

@@ -13,14 +13,10 @@ def close_port(port):
     port.close()
 
 
-def servo1_send(port, posicion):  # el servo que controla phi (plano xy)
+def servo_send(port, posicion):  # el servo que controla phi (plano xy)
     direccion = 1  # conector del driver al que esta conectado el motor
     port.write(bytearray([255, direccion, posicion]))
 
-
-def servo2_send(port, posicion):  # el servo que controla theta (respecto al eje z)
-    direccion = 2  # conector del driver al que esta conectado el motor
-    port.write(bytearray([255, direccion, posicion]))
 
 
 def main():
