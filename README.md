@@ -57,5 +57,5 @@ Las librerias restantes (flask, flask-wtf, requests) se pueden instalar desde el
 
 ![](https://github.com/Lujano/PointCloudLM-Software/blob/master/Install/Install2.png)
 
-<br>[Home](#acondicionamiento-de-señales-analógicas)<br>
+<br>[Home](https://github.com/Lujano/PointCloudLM/wiki/DISE%C3%91O-E-IMPLEMENTACI%C3%93N-DE-UN-SISTEMA-DE-GENERACI%C3%93N-DE-NUBE-DE-PUNTOS-MEDIANTE-EL-EMPLEO-DE-FUSI%C3%93N-SENSORIAL)<br>
 
