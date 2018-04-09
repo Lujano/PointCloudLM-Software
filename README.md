@@ -42,6 +42,7 @@ crlt+q para salir
 ```bash
 deactivate
 ```
+Se deben instalar las librerias flask, flask-wtf, requests para poder ejecutar los codigos finales del proyecto en los  que se emplea comunicacion WIFI.
 ## IDE Python
 
 En nuestro proyecto se empleo Pycharm como IDE de desarrollo:
