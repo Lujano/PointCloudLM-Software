@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2> Live Streaming</h2>
+    <h3><img src="{{ url_for('video_feed2') }}" width="40%"></h3>
+    <h3>{{ time }}</h3>
+    <hr>
+	<h3> Return to main page ==> <a href="/"class="button">RETURN</a></h3>	
+	<hr>
+{% endblock %}

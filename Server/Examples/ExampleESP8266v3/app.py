@@ -55,7 +55,8 @@ def gen():
 
 @app.route("/")
 def index():
-        return render_template('index.html')
+    global system_state
+    return render_template('index.html')
 
 @app.route('/ESP8266', methods = ['POST', 'GET'])
 def login():
@@ -137,7 +138,7 @@ def login():
 
 @app.route('/HandTracking',methods = ['POST', 'GET'])
 def HandTracking():
-    global ip_ESP8266, ip_client1, step1, step2, band
+    global ip_ESP8266, ip_client1, step1, step2, band, system_state
     if request.method == 'POST':
         param1 = request.form['param2']
         param2 = request.form['param2']
@@ -146,6 +147,7 @@ def HandTracking():
         if (band == 0):
             print("Handtracking Started from ip  = {}".format(ip_client1))
             band = 1
+        system_state = "FREERUN"
         return "OK"
 
     else:
@@ -157,6 +159,7 @@ def HandTracking():
             ip_client1 = request.remote_addr
             print("Handtracking Started from ip  = {}".format(ip_client1))
             band = 1
+        system_state = "FREERUN"
         print("Step1 = {}, Step2 = {}".format(step1, step2))
         return "OK"
 
@@ -177,10 +180,13 @@ def video_feed():
 @app.route('/PointCloud/Form',  methods = ['GET', 'POST'])
 def Form():
     global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, phi_resol, theta_resol,phi_0, theta_0
+    global system_state
     """Video streaming home page."""
 
     PointCloud_Form = PointCloudForm(request.form)
     timeNow = time.asctime(time.localtime(time.time()))
+
+
 
     if request.method == 'POST' and PointCloud_Form.validate():
         phi_start = phi_0 - int(round(int(PointCloud_Form.phi_start.data)*phi_resol))

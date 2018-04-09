@@ -1,10 +1,8 @@
-<html>
-  <head>
-    <title>PointCloudLM</title>
-    <link rel="stylesheet" href='../static/style.css'/>
-  </head>
-  <body>
-    <h1>PointCloudLM</h1>
-    <img src="{{ url_for('video_feed') }}" width = "40%">
-  </body>
-</html>
+{% extends 'base.html'%}
+{% block content %}
+	<h3> Start Pointcloud ==> <a href="/PointCloud/Form"  class="button">POINTCLOUD</a></h3>
+	<h3> Start HandTracking ==> <a href="/HandTracking/Streaming" class="button">HANDTRACKING</a></h3>
+
+
+{% endblock %}
+
