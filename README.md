@@ -1,7 +1,7 @@
 # PointCloudLM-Software
 Software empleado en la implementación del sistema de generación de nubes de puntos
 
-La descripción de las librerias empleadas se encuentra en [PointCloudLM-Software Wiki] (https://github.com/Lujano/PointCloudLM-Software/wiki)
+La descripción de las librerias empleadas se encuentra en [PointCloudLM-Software Wiki](https://github.com/Lujano/PointCloudLM-Software/wiki)
 
 
 
