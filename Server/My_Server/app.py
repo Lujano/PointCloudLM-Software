@@ -17,7 +17,7 @@ phi_resol = (phi_0-phi_180+1)/180.0
 
 theta_0 = 245
 theta_90 = 131
-theta_max = 100  # minimo angulo sin que el motor choque con la base
+theta_max = 100  # minimo angulo sin que el motor choque con la base (114 grados)
 theta_resol = (theta_0-theta_90 +1)/90.0 # pasos por angulo
 
 #Variables globales
@@ -53,6 +53,7 @@ centery = int(round(h/2))
 data1 = np.zeros([0, 3])
 data2 = np.zeros([0, 3])
 color_infra = np.zeros([0, 4])
+color_ultra = np.zeros([0, 4])
 
 
 # Cargar polinomio calibrado al infrarrojo
@@ -165,7 +166,7 @@ def index():
 @app.route('/ESP8266', methods = ['POST', 'GET'])
 def login():
     global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, phi_0, theta_0, theta_resol, phi_resol
-    global img , data1, data2, color_infra
+    global img , data1, data2, color_infra, color_ultra
     if request.method == 'POST':
         param1 = request.form['param1']
         param2 = request.form['param2']
@@ -216,38 +217,46 @@ def login():
 
                      infra_distance = med_infrarrojo(Infra_data)
                      ultra_distance = med_ultrasonido(Echo_data)
-                     phi = transform_step(step1, 0)
-                     theta = transform_step(step2, 1)
+                     phi = transform_step(step11, 0)
+                     theta = transform_step(step22, 1)
 
                      r1, theta1, phi1, x1, y1, z1, = transform_coord(ultra_distance, theta, phi, 0)
-                     r2, theta2, phi2, x2, y2, z2, = transform_coord(ultra_distance, theta, phi, 0)
+                     r2, theta2, phi2, x2, y2, z2, = transform_coord(infra_distance, theta, phi, 1)
 
                      data1 = np.append(data1, [[x1, y1, z1]], 0)
                      data2 = np.append(data2, [[x2, y2, z2]], 0)
 
                      _, img = camera.read()
 
-                     d_sensor = infra_distance
-                     cx, cy, w1, h1 = Pixel_Fun(d_sensor)
-                     color = mean_color(img.copy(), cx, cy, w1, h1) # pasar copia de la imagen actual
+                     cx1, cy1, w1, h1 = Pixel_Fun(ultra_distance, 0)
+                     color = mean_color(img.copy(), cx1, cy1, w1, h1) # pasar copia de la imagen actual
+                     (b, g, r, channel) = color
+                     color_ultra = np.append(color_ultra, [[r / 255.0, g / 255.0, b / 255.0, 1]], 0)
+                     cv2.rectangle(img, (cx1 - w1, cy1 - h1), (cx1 + w1, cy1 + h1), (255, 0, 0), 3)
+
+                     cx2, cy2, w2, h2 = Pixel_Fun(infra_distance, 1)
+                     color = mean_color(img.copy(), cx2, cy2, w2, h2)  # pasar copia de la imagen actual
                      (b, g, r, channel) = color
                      color_infra = np.append(color_infra, [[r / 255.0, g / 255.0, b / 255.0, 1]], 0)
 
-                     cv2.rectangle(img, (cx - w1, cy - h1), (cx + w1, cy + h1), (255, 0, 0), 3)
+                     cv2.rectangle(img, (cx2 - w2, cy2 - h2), (cx2 + w2, cy2 + h2), (255, 0, 0), 3)
                      font = cv2.FONT_HERSHEY_SIMPLEX
-                     cv2.putText(img, "Distance = {0:0.2f} cm".format(d_sensor), (50, 50), font, 0.8, (50, 255, 50))
+                     cv2.putText(img, "Distance Ultra = {0:0.2f} cm".format(ultra_distance), (50, 50), font, 0.8, (50, 255, 50))
+                     cv2.putText(img, "Distance Infra = {0:0.2f} cm".format(infra_distance), (50, 80), font, 0.8,
+                                 (50, 255, 50))
 
 
                      print("Ultra_dis = {0:0.2f}, Infra_dis = {1:0.2f}, phi = {2:0.2f}, theta = {3:0.2f}".format(
-                     ultra_distance, infra_distance, np.degrees(phi), np.degrees(theta)))
+                     r1, r2, np.degrees(phi), np.degrees(theta)))
                      return "OK"
                 else: # PoinCloud terminada
                     # guardar data
                     pointcloud1 = data1
                     pointcloud2 = data2
-                    np.savetxt("Data/adquisicionUltraOso2.out", pointcloud1, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionInfraOso2.out", pointcloud2, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionColorOso2.out", color_infra, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionUltra3.out", pointcloud1, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionInfra3.out", pointcloud2, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionColorInfra3.out", color_infra, fmt='%1.8e')
+                    np.savetxt("Data/adquisicionColorUltr3.out", color_ultra, fmt='%1.8e')
                     step1 = phi_0 - 97  # reiniciar posicion de motor
                     step2 = theta_0 - 57
                     command = "FREERUN"
