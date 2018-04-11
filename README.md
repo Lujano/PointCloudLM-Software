@@ -1,13 +1,20 @@
 # PointCloudLM-Software
 Software empleado en la implementación del sistema de generación de nubes de puntos
 
+La descripción de las librerias empleadas se encuentra en [PointCloudLM-Software Wiki](https://github.com/Lujano/PointCloudLM-Software/wiki)
+
+
+
+![](https://github.com/Lujano/PointCloudLM-Software/blob/master/Install/Install3.png  )
+
+
 # Prerrequisitos
-Este proyecto se realizó en un ambiente de Anaconda 4.3.30 llamado PointCloudLM
+Este proyecto se realizó en un ambiente de Anaconda 4.3.30  nombrado como PointCloudLM
 
-Para instalar Anaconda, dirgirse a su  [página de descarga](https://www.anaconda.com/download/).
+Para instalar Anaconda, diriijase a su  [página de descarga](https://www.anaconda.com/download/).
 
-# Instalación del ambiente PointCloudLM
-* Una vez instalado Anaconda, abrir el prompt y ejecutar el siguiente comando:
+# Instalación del ambiente PointCloudLM para Windows y Linux
+* Una vez instalado Anaconda, abrir el prompt de anaconda y ejecutar el siguiente comando:
 ```bash
 conda create --name PointCloudLM --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy pyserial scipy
 ```
@@ -36,10 +43,19 @@ crlt+q para salir
 ```bash
 deactivate
 ```
+Se deben instalar las librerias flask, flask-wtf, requests para poder ejecutar los codigos finales del proyecto en los  que se emplea comunicacion WIFI.
 ## IDE Python
 
 En nuestro proyecto se empleo Pycharm como IDE de desarrollo:
-Para
 
-Para instalar Pycharm, dirgirse a su  [página de descarga](https://www.jetbrains.com/pycharm/download/)
+Para instalar Pycharm, dirijase a su  [página de descarga](https://www.jetbrains.com/pycharm/download/)
+
+Las librerias restantes (flask, flask-wtf, requests) se pueden instalar desde el IDE de Anaconda en el panel de configuracion:
+
+![](https://github.com/Lujano/PointCloudLM-Software/blob/master/Install/Install.png)
+
+
+![](https://github.com/Lujano/PointCloudLM-Software/blob/master/Install/Install2.png)
+
+<br>[Home](https://github.com/Lujano/PointCloudLM/wiki)<br>
 
