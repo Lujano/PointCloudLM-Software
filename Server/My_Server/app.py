@@ -9,6 +9,7 @@ from camera_opencv import Camera
 import cv2
 import numpy as np
 from Pixel_Fun import Pixel_Fun
+import os
 
 # Datos de motores calibrados
 phi_0 = 228
@@ -54,7 +55,7 @@ data1 = np.zeros([0, 3])
 data2 = np.zeros([0, 3])
 color_infra = np.zeros([0, 4])
 color_ultra = np.zeros([0, 4])
-
+file_name = ""
 
 # Cargar polinomio calibrado al infrarrojo
 poly_infra = np.loadtxt('../../Procesamiento/Calibracion/Infrarrojo/Polinomio_Ajuste_Infra2.out')
@@ -63,7 +64,6 @@ poly = np.poly1d(poly_infra)
 # Datos de la distancia al punto virtual
 dys = 2.0
 dhs = 13.0
-
 
 
 def gen():
@@ -83,10 +83,10 @@ def gen2():
         time.sleep(0.01)
         _, img = camera.read()
         phi = transform_step(step1, 0)
-        theta = transform_step(step2, 0)
+        theta = transform_step(step2, 1)
         font = cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(img, "theta = {0:0.2f} degrees".format(np.degrees(theta)), (50, 50), font, 1.2, (50, 255, 50))
-        cv2.putText(img, "phi   = {0:0.2f} degrees".format(np.degrees(phi)), (50, 80), font, 1.2, (50, 255, 50))
+        cv2.putText(img, "theta = {0:0.2f} degrees".format(np.degrees(theta)), (50, 50), font, 1.2, (20,200 , 20), 3, cv2.LINE_AA)
+        cv2.putText(img, "phi   = {0:0.2f} degrees".format(np.degrees(phi)), (50, 80), font, 1.2, (20, 200, 20), 3, cv2.LINE_AA)
         frame_encode = cv2.imencode('.jpg', img)[1].tobytes()
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame_encode + b'\r\n')
@@ -120,9 +120,10 @@ def transform_coord (distance_sensor, theta, phi, sensor): # cm, rads, rads
     alpha = np.arctan(dys / (dhs + distance_sensor))
 
     if (sensor == 0): # ultra
-        theta = theta-alpha
+        phi= phi-alpha
     else: # infra
-        theta = theta+alpha
+        phi = phi+alpha
+
     x = r * np.sin(theta) * np.cos(phi)
     y = r * np.sin(theta) * np.sin(phi)
     z = r * np.cos(theta)
@@ -187,8 +188,8 @@ def login():
                 print("ESP8266 Connected, ip  = {}".format(ip_ESP8266))
                 system_state = "FREERUN"
                 return "OK"
-            else:
-                command = "RESET"
+            else: # Entonces el estado de la ESP es Pointcloud o Freerun
+                command = "RESET" # Resetear
                 system_state = "ESP"
                 return command
         elif( system_state == "FREERUN" ):
@@ -241,9 +242,14 @@ def login():
 
                      cv2.rectangle(img, (cx2 - w2, cy2 - h2), (cx2 + w2, cy2 + h2), (255, 0, 0), 3)
                      font = cv2.FONT_HERSHEY_SIMPLEX
-                     cv2.putText(img, "Distance Ultra = {0:0.2f} cm".format(ultra_distance), (50, 50), font, 0.8, (50, 255, 50))
+                     cv2.putText(img, "Distance Ultra = {0:0.2f} cm".format(ultra_distance), (50, 50), font, 0.8,
+                                 (20, 200, 20), 3, cv2.LINE_AA)
                      cv2.putText(img, "Distance Infra = {0:0.2f} cm".format(infra_distance), (50, 80), font, 0.8,
-                                 (50, 255, 50))
+                                 (20, 200, 20), 3, cv2.LINE_AA)
+                     cv2.putText(img, "theta = {0:0.2f} degrees".format(np.degrees(theta)), (50, 110), font, 0.8,
+                                 (20, 200, 20), 3, cv2.LINE_AA)
+                     cv2.putText(img, "phi   = {0:0.2f} degrees".format(np.degrees(phi)), (50, 140), font, 0.8,
+                                 (20, 200, 20), 3, cv2.LINE_AA)
 
 
                      print("Ultra_dis = {0:0.2f}, Infra_dis = {1:0.2f}, phi = {2:0.2f}, theta = {3:0.2f}".format(
@@ -253,15 +259,20 @@ def login():
                     # guardar data
                     pointcloud1 = data1
                     pointcloud2 = data2
-                    np.savetxt("Data/adquisicionUltra_Pag.out", pointcloud1, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionInfra_Pag.out", pointcloud2, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionColorInfra_Pag.out", color_infra, fmt='%1.8e')
-                    np.savetxt("Data/adquisicionColorUltra_Pag.out", color_ultra, fmt='%1.8e')
+                    os.mkdir("Data/"+file_name)
+                    np.savetxt("Data/"+file_name+"/Ultra.out", pointcloud1, fmt='%1.8e')
+                    np.savetxt("Data/"+file_name+"/Infra.out", pointcloud2, fmt='%1.8e')
+                    np.savetxt("Data/"+file_name+"/ColorInfra.out", color_infra, fmt='%1.8e')
+                    np.savetxt("Data/"+file_name+"/ColorUltra.out", color_ultra, fmt='%1.8e')
                     step1 = phi_0 - 97  # reiniciar posicion de motor
                     step2 = theta_0 - 57
                     command = "FREERUN"
                     system_state = "FREERUN"
+<<<<<<< HEAD
                     img = np.zeros((h, w, 3), dtype='uint8')
+=======
+                    img =  np.zeros((h, w, 3), dtype='uint8')
+>>>>>>> 7189d3ef125c696c45b178ebbb67c6c63b74b874
                     font = cv2.FONT_HERSHEY_SIMPLEX
                     cv2.putText(img, "PointCloudLM Ready", (0, centery), font, 2, (50, 255, 50))
                     return command + "&" + str(step1) + "&" + str(step2)
@@ -338,7 +349,8 @@ def video_feed2():
 
 @app.route('/PointCloud/Form',  methods = ['GET', 'POST'])
 def Form():
-    global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, phi_resol, theta_resol,phi_0, theta_0
+    global ip_ESP8266, step1, step2, system_state, phi_start, phi_end, theta_start, theta_end, \
+        phi_resol, theta_resol,phi_0, theta_0, file_name
 
     """Video streaming home page."""
 
@@ -348,6 +360,7 @@ def Form():
 
 
     if request.method == 'POST' and PointCloud_Form.validate():
+        file_name = PointCloud_Form.file_name.data
         phi_start = phi_0 - int(round(int(PointCloud_Form.phi_start.data)*phi_resol))
         phi_end = phi_0 - int(round(int(PointCloud_Form.phi_end.data) * phi_resol))
         theta_start = theta_0 - int(round(int(PointCloud_Form.theta_start.data) * theta_resol))

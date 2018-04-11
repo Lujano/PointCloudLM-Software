@@ -1,7 +1,7 @@
 
-conda create --name radar --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy
+conda create --name PointCloudLM --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy
 then:
-activate radar
+activate PointCloudLM
 then:
 pip install opencv-python scipy
 
