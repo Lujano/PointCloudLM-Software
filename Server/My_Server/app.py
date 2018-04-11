@@ -261,7 +261,7 @@ def login():
                     step2 = theta_0 - 57
                     command = "FREERUN"
                     system_state = "FREERUN"
-                    img = canvas = np.zeros((h, w, 3), dtype='uint8')
+                    img = np.zeros((h, w, 3), dtype='uint8')
                     font = cv2.FONT_HERSHEY_SIMPLEX
                     cv2.putText(img, "PointCloudLM Ready", (0, centery), font, 2, (50, 255, 50))
                     return command + "&" + str(step1) + "&" + str(step2)
