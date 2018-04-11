@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>PointCloud Parameters</h2>
+    <h3>PointCloud Parameters</h3>
     {% from "_macro.html" import render_field %}
     <form name = "sentMessage" id = "contactForm" method="Post">
+		{{ render_field(form.file_name)}}
 		{{ render_field(form.phi_start)}}
 		{{ render_field(form.phi_end)}}
 		{{ render_field(form.theta_start)}}
@@ -14,6 +15,6 @@
     </form>
 
     <hr>
-	<h3> Return to main page ==> <a href="/" class="button">RETURN</a></h3>
+	<h4> Return to main page ==> <a href="/" class="button">RETURN</a></h4>
 	<hr>
 {% endblock %}

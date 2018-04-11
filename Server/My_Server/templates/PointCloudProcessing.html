@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>PointCloud Processing</h2>
-    <h3><img src="{{ url_for('video_feed') }}" width="40%"></h3>
-    <h3>{{ time }}</h3>
-	<h3> Return to main page ==> <a href="/" class="button">RETURN</a></h3>
+    <h3>PointCloud Processing</h3>
+    <h4><img src="{{ url_for('video_feed') }}" width="40%"></h4>
+    <h4>{{ time }}</h4>
+	<h4> Return to main page ==> <a href="/" class="button">RETURN</a></h4>
 	<hr>
-		<h3> Send Parameters ==> <a href="/PointCloud/Form" class="button">PARAMETERS</a></h3>
+		<h4> Send Parameters ==> <a href="/PointCloud/Form" class="button">PARAMETERS</a></h4>
 		<hr>
 
 {% endblock %}

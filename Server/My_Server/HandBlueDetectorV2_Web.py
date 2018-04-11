@@ -5,27 +5,29 @@ import numpy as np
 import cv2
 import time
 import requests
-ip_server = "192.168.1.125"
+ip_server = "192.168.1.106"
 #ip_server = "127.1.1.1"
 port_server = "8000"
 
 
 def ESP8266_send(ip, step1, step2): # el servo que controla phi (plano xy)
-    url_FREERUN = "http://"+ ip +":"+ port_server+ "/HandTracking" + '?step1=' + str(step1) \
-                  + '&step2=' + str(step2)
+    # url_FREERUN = "http://"+ ip +":"+ port_server+ "/HandTracking" + '?step1=' + str(step1) \
+    #               + '&step2=' + str(step2)
+    #
+    # try:
+    #     T_Inicio = time.time()
+    #
+    #     req = requests.get(url_FREERUN)
+    #     response = req.content
+    #     T_Final = time.time()
+    #     Dif = T_Final - T_Inicio
+    #     print(Dif)
+    #     if response != "OK":
+    #         print("Bad response ")
+    # except:
+    #     print("Error Sending Data")
 
-    try:
-        T_Inicio = time.time()
-
-        req = requests.get(url_FREERUN)
-        response = req.content
-        T_Final = time.time()
-        Dif = T_Final - T_Inicio
-        print(Dif)
-        if response != "OK":
-            print("Bad response ")
-    except:
-        print("Error Sending Data")
+    return
 
 def adjust_coord(handx, handy, w1, h1, n_pasos):
 
@@ -58,10 +60,11 @@ def adjust_coord(handx, handy, w1, h1, n_pasos):
 
 # define the upper and lower boundaries of the HSV pixel
 # intensities to be considered 'skin'
-lower = np.array([100, 50, 50], dtype = "uint8")
-upper = np.array([120, 255, 255], dtype = "uint8")
+lower = np.array([100, 5, 5], dtype = "uint8")
+upper = np.array([130, 255, 200], dtype = "uint8")
 
-
+# lower = np.array([100, 50, 50], dtype = "uint8")
+# upper = np.array([120, 255, 255], dtype = "uint8")
 
 call = 0
 
@@ -79,7 +82,7 @@ theta_resol = (theta_0-theta_90 +1)/90.0 # pasos por angulo
 step1 = phi_0-97 # 45 grados
 step2 = theta_90 +57 #
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 ESP8266_send(ip_server, step1, step2)
 
 last_paso_theta, last_paso_phi = 57,  97
