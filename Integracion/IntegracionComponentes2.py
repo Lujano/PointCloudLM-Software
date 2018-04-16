@@ -97,14 +97,7 @@ def mean_color (image, centerx, centery, w1, h1):
 
     return mean_color
 
-def delay_s(tiempo):
-    T_Inicio = time.time()
-    T_Final = time.time()
-    Dif = T_Final - T_Inicio
-    while(Dif < tiempo ):
-        T_Final = time.time()
-        Dif = T_Final - T_Inicio
-    return
+
 
 
 def main():

@@ -20,8 +20,8 @@ def read_pcd_file(input_filename):
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
-pointcloud = np.loadtxt('Chiffon/adquisicionInfra_Mant.out')
-color  = np.loadtxt('Chiffon/adquisicionColorInfra_Mant.out')
+pointcloud = np.loadtxt('Chiffon/adquisicionUltra_Mant.out')
+color  = np.loadtxt('Chiffon/adquisicionColorUltra_Mant.out')
 print("Numero de datos: {}".format(pointcloud.shape[0]))
 xs = pointcloud[:, 0]
 ys =  pointcloud[:, 1]
