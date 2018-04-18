@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """ En este codigo se recibe la variable nm desde el cliente mediante metodos POST GET"""
 
-
+#rama 2
 from flask import Flask, render_template, Response, request
 import time
 from forms import PointCloudForm
