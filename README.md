@@ -25,6 +25,7 @@ Lo cual instala python 2.7 y las librerias pcl, matplotlib, mayavi y numpy pyser
 
 ```bash
 activate  PointCloudLM
+source activate PointCLoudLM (Linux)
 ```
 * y se instala la libreria de opencv:
 
@@ -42,6 +43,7 @@ crlt+q para salir
 * y se desactiva el environment:
 ```bash
 deactivate
+source deactivate PointCLoudLM (Linux)
 ```
 Se deben instalar las librerias flask, flask-wtf, requests para poder ejecutar los codigos finales del proyecto en los  que se emplea comunicacion WIFI.
 ## IDE Python
