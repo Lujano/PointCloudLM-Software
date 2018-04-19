@@ -60,14 +60,10 @@ def adjust_coord(handx, handy, w1, h1, n_pasos):
 
 # define the upper and lower boundaries of the HSV pixel
 # intensities to be considered 'skin'
-<<<<<<< HEAD
+
 lower = np.array([100, 5, 5], dtype = "uint8")
 upper = np.array([130, 255, 200], dtype = "uint8")
-=======
-lower = np.array([95, 50, 50], dtype = "uint8")
-upper = np.array([130, 255, 255], dtype = "uint8")
 
->>>>>>> c3f1c304ce52bd71e90da1500ed1f091832ecd38
 
 # lower = np.array([100, 50, 50], dtype = "uint8")
 # upper = np.array([120, 255, 255], dtype = "uint8")
