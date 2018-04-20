@@ -16,10 +16,10 @@ Para instalar Anaconda, diriijase a su  [página de descarga](https://www.anacon
 # Instalación del ambiente PointCloudLM para Windows y Linux
 * Una vez instalado Anaconda, abrir el prompt de anaconda y ejecutar el siguiente comando:
 ```bash
-conda create --name PointCloudLM --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy pyserial scipy
+conda create --name PointCloudLM --channel ccordoba12 pcl python-pcl matplotlib mayavi numpy pyserial scipy flask flask-wtf requests
 ```
 
-Lo cual instala python 2.7 y las librerias pcl, matplotlib, mayavi y numpy pyserial y scipy
+Lo cual instala python 2.7 y las librerias pcl, matplotlib, mayavi y numpy pyserial y scipy, flask y requests
 
 * Luego, se procede a activar el ambiente:
 
@@ -45,7 +45,7 @@ crlt+q para salir
 deactivate
 source deactivate PointCLoudLM (Linux)
 ```
-Se deben instalar las librerias flask, flask-wtf, requests para poder ejecutar los codigos finales del proyecto en los  que se emplea comunicacion WIFI.
+
 ## IDE Python
 
 En nuestro proyecto se empleo Pycharm como IDE de desarrollo:
