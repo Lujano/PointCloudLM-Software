@@ -84,7 +84,7 @@ theta_resol = (theta_0-theta_90 +1)/90.0 # pasos por angulo
 step1 = phi_0-97 # 45 grados
 step2 = theta_90 +57 #
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 ESP8266_send(ip_server, step1, step2)
 
 last_paso_theta, last_paso_phi = 57,  97
