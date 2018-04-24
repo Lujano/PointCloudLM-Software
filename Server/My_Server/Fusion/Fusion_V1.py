@@ -50,31 +50,43 @@ import pcl
 def read_pcd_file(input_filename):
     return pcl.load(input_filename).to_array()
 
+def convert_row2spherical(rows):
+    x, y , z = rows[0], rows[1], rows[2]
+    radius = np.sqrt(x**2 + y**2 +z**2)
+    theta = np.arccos(z/radius)
+    phi = np.arctan2(y, x) # retorna arctan(y/x)
+    print("X= {}, Y = {}, Z = {}".format(x, y , z))
+    return theta, phi, radius
+
 def convert2spherical(pointcloud_XYZ):
     pointcloud_ThetaPhiRadius = np.zeros([0, 3]) # Matriz vacia
     for rows in pointcloud_XYZ:
-        print rows
+        theta, phi, radius = convert_row2spherical(rows)
+        pointcloud_ThetaPhiRadius = np.append(pointcloud_ThetaPhiRadius , [[np.degrees(theta), np.degrees(phi), radius]], 0)
+
 
     return pointcloud_ThetaPhiRadius
+
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-
+# pensar concatenacion de enteros y flotantes
 pointcloud_Infra = np.loadtxt("A.out")
 pointcloud_Ultra = np.loadtxt('adquisicionUltra_Mant.out')
 
 pointcloud_Ultra = convert2spherical(pointcloud_Ultra)
 print(pointcloud_Ultra)
 
+
 theta_columnI = pointcloud_Infra[:, 2] # tercera columna
 theta_columnU = pointcloud_Ultra[:, 2]
-
-theta1 = theta_columnU[0]
-match, = np.where( theta1 < theta_columnI )
-print(theta_columnI)
-print(theta1)
-if match.size == 0 : # matriz vacia
-    print( "Not found")
-else:
-    print(match[1])
-
-
+#
+# theta1 = theta_columnU[0]
+# match, = np.where( theta1 < theta_columnI )
+# print(theta_columnI)
+# print(theta1)
+# if match.size == 0 : # matriz vacia
+#     print( "Not found")
+# else:
+#     print(match[1])
+#
+#
